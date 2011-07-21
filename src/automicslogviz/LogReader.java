@@ -104,10 +104,21 @@ public class LogReader {
 				}
 				else
 					logger.log(Level.WARNING, "No kml file found for "+datadir);
-				logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions");
+				logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions ("+countTruncatedPositions(user.getPositions())+" truncated)");
 			}
 		}
 		return users;
+	}
+	/**
+	 * @param positions
+	 * @return
+	 */
+	private static int countTruncatedPositions(List<Position> positions) {
+		int c = 0;
+		for (Position p : positions)
+			if (p.isTruncated())
+				c++;
+		return c;
 	}
 	private static List<Position> readPositions(File kmlfile) {
 		LinkedList<Position> positions = new LinkedList<Position>();

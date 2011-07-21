@@ -62,7 +62,11 @@ public class SvgFile {
 	}
 	public void circle(float cx, float cy, float r, String stroke, float strokeWidth,
 			String fill) {
-		pw.println("<circle cx=\""+cx+"\" cy=\""+cy+"\" r=\""+r+"\" "+(stroke!=null ? "stroke=\""+stroke+"\" ": "")+"stroke-width=\""+strokeWidth+"\" "+(fill!=null ? "fill=\""+fill+"\" " : "")+"/>");
+		circle(cx, cy, r, stroke, strokeWidth, fill, null);
+	}
+	public void circle(float cx, float cy, float r, String stroke, float strokeWidth,
+				String fill, String extra) {
+		pw.println("<circle cx=\""+cx+"\" cy=\""+cy+"\" r=\""+r+"\" "+(stroke!=null ? "stroke=\""+stroke+"\" ": "")+"stroke-width=\""+strokeWidth+"\" "+(fill!=null ? "fill=\""+fill+"\" " : "")+(extra!=null ? extra : "")+"/>");
 	}
 	public void line(float x1, float y1, float x2, float y2, String stroke, float strokeWidth) {
 		pw.println("<line x1=\""+x1+"\" y1=\""+y1+"\" x2=\""+x2+"\" y2=\""+y2+"\" "+(stroke!=null ? "stroke=\""+stroke+"\" ": "")+"stroke-width=\""+strokeWidth+"\"/>");
