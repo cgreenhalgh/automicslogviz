@@ -39,7 +39,7 @@ public class SvgFile {
 		pw.println("<?xml version=\"1.0\" standalone=\"no\"?>");
 		pw.println("<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">");
 		// svg file
-		pw.println("<svg opacity=\"20%\" width=\"10cm\" height=\"10cm\" version=\"1.1\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
+		pw.println("<svg opacity=\"20%\" width=\"30cm\" height=\"30cm\" version=\"1.1\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
 	}
 	public void close() {
 		pw.println("</svg>");

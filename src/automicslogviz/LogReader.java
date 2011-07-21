@@ -24,8 +24,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.DataFormatException;
@@ -36,6 +38,34 @@ import java.util.zip.DataFormatException;
  */
 public class LogReader {
 	static Logger logger = Logger.getLogger(LogReader.class.getName());
+	public static Map<Integer,Zone> readZones(File file) {
+		Map<Integer,Zone> zones = new HashMap<Integer,Zone>();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			br.readLine();// header
+			while (true) {
+				String line = br.readLine();
+				if (line==null)
+					break;
+				String values[] = line.split(",");
+				Zone z= new Zone();
+				//tagId	type	radius	comment	lat	lng	time	timestamp 
+				int i=0;
+				z.setTagId(Integer.parseInt(values[i++]));
+				z.setType(values[i++]);
+				z.setRadius(Float.parseFloat(values[i++]));
+				z.setComment(values[i++]);
+				z.setLat(Double.parseDouble(values[i++]));
+				z.setLon(Double.parseDouble(values[i++]));
+				zones.put(z.getTagId(), z);
+			}
+			br.close();
+		}
+		catch (Exception e) {
+			logger.log(Level.SEVERE, "Error reading zone file "+file, e);
+		}
+		return zones;
+	}
 	public static List<UserData> readLogs(File dir) {
 		// trials should be directories
 		logger.log(Level.INFO, "read logs from "+dir);

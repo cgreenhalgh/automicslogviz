@@ -1,0 +1,2557 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<kml xmlns="http://www.opengis.net/kml/2.2"> 
+<Document> 
+<name>GPS Trace for 354957032349402</name>
+<description>Start time: 2010-08-10 10:36:20 
+End time: 2010-08-11 15:17:33 
+Total distance: 4395.6846 m 
+ </description> 
+<Style id="yellowLineGreenPoly"> 
+<LineStyle>
+<color>7f00ffff></color> 
+<width>3</width> 
+</LineStyle> 
+<PolyStyle>
+<color>7f00ff00</color> 
+</PolyStyle>
+</Style> 
+<Placemark> 
+<name>Start</name><description>Time: 2010-08-10 10:36:20 
+</description> 
+<TimeStamp><when>2010-08-10T11:36:20+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point> 
+</Placemark> 
+<Placemark> 
+ <name>path</name> 
+ <styleUrl>#yellowLineGreenPoly</styleUrl> 
+<LineString> 
+<extrude>1</extrude> 
+ <tessellate>1</tessellate> 
+<altitudeMode>relativeToGround</altitudeMode> 
+<coordinates> 
+-1.0E-6,5.2E-5,50 
+-1.892234,52.989984,50 
+-1.892035,52.989817,50 
+-1.891762,52.989737,50 
+-1.891499,52.989635,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.890388,52.989168,50 
+-1.890179,52.989023,50 
+-1.889922,52.988921,50 
+-1.890056,52.988723,50 
+-1.890227,52.988573,50 
+-1.89041,52.988417,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.890286,52.98853,50 
+-1.890206,52.988707,50 
+-1.8902,52.988525,50 
+-1.890367,52.988342,50 
+-1.890302,52.988525,50 
+-1.890195,52.988696,50 
+-1.889986,52.988852,50 
+-1.889873,52.989023,50 
+-1.889718,52.98919,50 
+-1.889551,52.989356,50 
+-1.889396,52.989517,50 
+-1.88924,52.989673,50 
+-1.889058,52.989817,50 
+-1.888757,52.989828,50 
+-1.888473,52.989769,50 
+-1.888178,52.989732,50 
+-1.887872,52.989774,50 
+-1.0E-6,5.2E-5,50 
+-1.887347,52.990069,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.886161,52.989951,50 
+-1.88592,52.989839,50 
+-1.0E-6,5.2E-5,50 
+-1.88556,52.989989,50 
+-1.885319,52.989882,50 
+-1.885212,52.989705,50 
+-1.884959,52.989592,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.884584,52.988702,50 
+-1.884493,52.98853,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.883602,52.987071,50 
+-1.883592,52.987259,50 
+-1.883699,52.987468,50 
+-1.883431,52.987591,50 
+-1.883119,52.987554,50 
+-1.883549,52.987253,50 
+-1.883254,52.987173,50 
+-1.882942,52.987183,50 
+-1.882717,52.987033,50 
+-1.882588,52.986867,50 
+-1.882637,52.987049,50 
+-1.882792,52.987205,50 
+-1.882857,52.987382,50 
+-1.0E-6,5.2E-5,50 
+-1.883345,52.986958,50 
+-1.882873,52.986894,50 
+-1.882497,52.986969,50 
+-1.882197,52.986942,50 
+-1.0E-6,5.2E-5,50 
+-1.882588,52.98662,50 
+-1.88269,52.986797,50 
+-1.883028,52.98691,50 
+-1.882932,52.986733,50 
+-1.883189,52.986829,50 
+-1.883484,52.986931,50 
+-1.883752,52.987022,50 
+-1.884026,52.987098,50 
+-1.884267,52.987205,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.884579,52.98868,50 
+-1.884739,52.988846,50 
+-1.884621,52.989013,50 
+-1.884772,52.989431,50 
+-1.0E-6,5.2E-5,50 
+-1.885485,52.989903,50 
+-1.885786,52.98986,50 
+-1.886054,52.989941,50 
+-1.886215,52.990102,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.887867,52.989807,50 
+-1.888183,52.989801,50 
+-1.888489,52.989812,50 
+-1.888795,52.989791,50 
+-1.889042,52.989683,50 
+-1.889213,52.989528,50 
+-1.889449,52.989388,50 
+-1.889669,52.989259,50 
+-1.889798,52.989082,50 
+-1.890115,52.989125,50 
+-1.89041,52.989184,50 
+-1.890635,52.989308,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.892051,52.989495,50 
+-1.892384,52.989501,50 
+-1.89269,52.989442,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.893661,52.988916,50 
+-1.893988,52.988927,50 
+-1.894159,52.989077,50 
+-1.894412,52.989174,50 
+-1.894572,52.989007,50 
+-1.894283,52.988921,50 
+-1.894063,52.989045,50 
+-1.893918,52.988873,50 
+-1.893639,52.988943,50 
+-1.893489,52.989099,50 
+-1.893355,52.989259,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.89269,52.98971,50 
+-1.892395,52.989742,50 
+-1.892287,52.989914,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.892293,52.989785,50 
+-1.892588,52.989667,50 
+-1.892888,52.98963,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.893505,52.989072,50 
+-1.893618,52.9889,50 
+-1.893687,52.988723,50 
+-1.893736,52.988508,50 
+-1.893779,52.988326,50 
+-1.893891,52.988154,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.895672,52.987022,50 
+-1.895973,52.987082,50 
+-1.896241,52.98698,50 
+-1.896536,52.986883,50 
+-1.896842,52.986845,50 
+-1.896826,52.986658,50 
+-1.89645,52.98662,50 
+-1.896182,52.986706,50 
+-1.896391,52.986835,50 
+-1.896691,52.986797,50 
+-1.896268,52.986615,50 
+-1.896348,52.986803,50 
+-1.896311,52.98662,50 
+-1.89608,52.986502,50 
+-1.895779,52.98647,50 
+-1.895527,52.986567,50 
+-1.895597,52.986744,50 
+-1.895699,52.986921,50 
+-1.895833,52.987087,50 
+-1.896134,52.987065,50 
+-1.896455,52.987028,50 
+-1.896761,52.98699,50 
+-1.896777,52.987178,50 
+-1.896482,52.987135,50 
+-1.896182,52.987146,50 
+-1.895876,52.98713,50 
+-1.895592,52.98706,50 
+-1.895307,52.987006,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.892534,52.985392,50 
+-1.892169,52.985349,50 
+-1.891901,52.985268,50 
+-1.891681,52.98514,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.89041,52.985193,50 
+-1.890131,52.985081,50 
+-1.889954,52.984936,50 
+-1.890045,52.984764,50 
+-1.0E-6,5.2E-5,50 
+-1.890785,52.985022,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.890501,52.985134,50 
+-1.890184,52.985145,50 
+-1.889964,52.985022,50 
+-1.88968,52.984941,50 
+-1.889895,52.985081,50 
+-1.890152,52.985204,50 
+-1.890479,52.985123,50 
+-1.890774,52.985086,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.892395,52.984662,50 
+-1.892625,52.984544,50 
+-1.892277,52.984662,50 
+-1.891976,52.984619,50 
+-1.0E-6,5.2E-5,50 
+-1.890635,52.985107,50 
+-1.890345,52.985177,50 
+-1.890013,52.985258,50 
+-1.889734,52.98536,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.889423,52.988932,50 
+-1.889691,52.98904,50 
+-1.889975,52.9892,50 
+-1.890243,52.989313,50 
+-1.890501,52.989458,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.889337,52.989732,50 
+-1.88931,52.989528,50 
+-1.889449,52.989367,50 
+-1.8896,52.989206,50 
+-1.8899,52.989227,50 
+-1.890147,52.989329,50 
+-1.890442,52.989404,50 
+-1.890399,52.989592,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.889412,52.989769,50 
+-1.889337,52.98956,50 
+-1.889433,52.989388,50 
+-1.889551,52.9892,50 
+-1.889718,52.989045,50 
+-1.890002,52.988986,50 
+-1.890222,52.989115,50 
+-1.890517,52.9892,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.893124,52.988519,50 
+-1.893446,52.98846,50 
+-1.893703,52.988567,50 
+-1.89373,52.988766,50 
+-1.893982,52.988873,50 
+-1.893918,52.988696,50 
+-1.894009,52.988868,50 
+-1.894111,52.988696,50 
+-1.894433,52.988761,50 
+-1.894674,52.988868,50 
+-1.894374,52.988927,50 
+-1.894106,52.989061,50 
+-1.893864,52.989174,50 
+-1.893639,52.989297,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.0E-6,5.2E-5,50 
+-1.893065,52.989951,50 
+-1.892883,52.990102,50 
+-1.892566,52.990096,50 
+-1.892287,52.990032,50 
+</coordinates> 
+</LineString> 
+</Placemark> 
+<Placemark> 
+ <description>Time: 2010-08-10 10:45:17 
+</description> 
+<TimeStamp><when>2010-08-10T11:45:17+0100</when></TimeStamp>
+<Point><coordinates>-1.892234,52.989984,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:45:40 
+</description> 
+<TimeStamp><when>2010-08-10T11:45:40+0100</when></TimeStamp>
+<Point><coordinates>-1.892035,52.989817,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:46:00 
+</description> 
+<TimeStamp><when>2010-08-10T11:46:00+0100</when></TimeStamp>
+<Point><coordinates>-1.891762,52.989737,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:46:22 
+</description> 
+<TimeStamp><when>2010-08-10T11:46:22+0100</when></TimeStamp>
+<Point><coordinates>-1.891499,52.989635,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:46:41 
+</description> 
+<TimeStamp><when>2010-08-10T11:46:41+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:46:59 
+</description> 
+<TimeStamp><when>2010-08-10T11:46:59+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:47:18 
+</description> 
+<TimeStamp><when>2010-08-10T11:47:18+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:47:39 
+</description> 
+<TimeStamp><when>2010-08-10T11:47:39+0100</when></TimeStamp>
+<Point><coordinates>-1.890388,52.989168,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:47:53 
+</description> 
+<TimeStamp><when>2010-08-10T11:47:53+0100</when></TimeStamp>
+<Point><coordinates>-1.890179,52.989023,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:48:17 
+</description> 
+<TimeStamp><when>2010-08-10T11:48:17+0100</when></TimeStamp>
+<Point><coordinates>-1.889922,52.988921,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:49:38 
+</description> 
+<TimeStamp><when>2010-08-10T11:49:38+0100</when></TimeStamp>
+<Point><coordinates>-1.890056,52.988723,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:54:08 
+</description> 
+<TimeStamp><when>2010-08-10T11:54:08+0100</when></TimeStamp>
+<Point><coordinates>-1.890227,52.988573,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:54:27 
+</description> 
+<TimeStamp><when>2010-08-10T11:54:27+0100</when></TimeStamp>
+<Point><coordinates>-1.89041,52.988417,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:55:05 
+</description> 
+<TimeStamp><when>2010-08-10T11:55:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:55:25 
+</description> 
+<TimeStamp><when>2010-08-10T11:55:25+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:55:43 
+</description> 
+<TimeStamp><when>2010-08-10T11:55:43+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:56:00 
+</description> 
+<TimeStamp><when>2010-08-10T11:56:00+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:56:18 
+</description> 
+<TimeStamp><when>2010-08-10T11:56:18+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:56:35 
+</description> 
+<TimeStamp><when>2010-08-10T11:56:35+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:56:53 
+</description> 
+<TimeStamp><when>2010-08-10T11:56:53+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:57:11 
+</description> 
+<TimeStamp><when>2010-08-10T11:57:11+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:57:29 
+</description> 
+<TimeStamp><when>2010-08-10T11:57:29+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:57:47 
+</description> 
+<TimeStamp><when>2010-08-10T11:57:47+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:58:06 
+</description> 
+<TimeStamp><when>2010-08-10T11:58:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:59:06 
+</description> 
+<TimeStamp><when>2010-08-10T11:59:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:59:26 
+</description> 
+<TimeStamp><when>2010-08-10T11:59:26+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 10:59:46 
+</description> 
+<TimeStamp><when>2010-08-10T11:59:46+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:00:07 
+</description> 
+<TimeStamp><when>2010-08-10T12:00:07+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:00:26 
+</description> 
+<TimeStamp><when>2010-08-10T12:00:26+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:00:44 
+</description> 
+<TimeStamp><when>2010-08-10T12:00:44+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:01:04 
+</description> 
+<TimeStamp><when>2010-08-10T12:01:04+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:01:25 
+</description> 
+<TimeStamp><when>2010-08-10T12:01:25+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:01:47 
+</description> 
+<TimeStamp><when>2010-08-10T12:01:47+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:02:05 
+</description> 
+<TimeStamp><when>2010-08-10T12:02:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:02:26 
+</description> 
+<TimeStamp><when>2010-08-10T12:02:26+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:02:45 
+</description> 
+<TimeStamp><when>2010-08-10T12:02:45+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:03:03 
+</description> 
+<TimeStamp><when>2010-08-10T12:03:03+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:03:23 
+</description> 
+<TimeStamp><when>2010-08-10T12:03:23+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:03:40 
+</description> 
+<TimeStamp><when>2010-08-10T12:03:40+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:04:00 
+</description> 
+<TimeStamp><when>2010-08-10T12:04:00+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:04:14 
+</description> 
+<TimeStamp><when>2010-08-10T12:04:14+0100</when></TimeStamp>
+<Point><coordinates>-1.890286,52.98853,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:04:28 
+</description> 
+<TimeStamp><when>2010-08-10T12:04:28+0100</when></TimeStamp>
+<Point><coordinates>-1.890206,52.988707,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:08:03 
+</description> 
+<TimeStamp><when>2010-08-10T12:08:03+0100</when></TimeStamp>
+<Point><coordinates>-1.8902,52.988525,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:27:06 
+</description> 
+<TimeStamp><when>2010-08-10T12:27:06+0100</when></TimeStamp>
+<Point><coordinates>-1.890367,52.988342,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:28:07 
+</description> 
+<TimeStamp><when>2010-08-10T12:28:07+0100</when></TimeStamp>
+<Point><coordinates>-1.890302,52.988525,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:28:20 
+</description> 
+<TimeStamp><when>2010-08-10T12:28:20+0100</when></TimeStamp>
+<Point><coordinates>-1.890195,52.988696,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:28:44 
+</description> 
+<TimeStamp><when>2010-08-10T12:28:44+0100</when></TimeStamp>
+<Point><coordinates>-1.889986,52.988852,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:29:22 
+</description> 
+<TimeStamp><when>2010-08-10T12:29:22+0100</when></TimeStamp>
+<Point><coordinates>-1.889873,52.989023,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:29:40 
+</description> 
+<TimeStamp><when>2010-08-10T12:29:40+0100</when></TimeStamp>
+<Point><coordinates>-1.889718,52.98919,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:30:09 
+</description> 
+<TimeStamp><when>2010-08-10T12:30:09+0100</when></TimeStamp>
+<Point><coordinates>-1.889551,52.989356,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:30:22 
+</description> 
+<TimeStamp><when>2010-08-10T12:30:22+0100</when></TimeStamp>
+<Point><coordinates>-1.889396,52.989517,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:30:38 
+</description> 
+<TimeStamp><when>2010-08-10T12:30:38+0100</when></TimeStamp>
+<Point><coordinates>-1.88924,52.989673,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:31:05 
+</description> 
+<TimeStamp><when>2010-08-10T12:31:04+0100</when></TimeStamp>
+<Point><coordinates>-1.889058,52.989817,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:31:25 
+</description> 
+<TimeStamp><when>2010-08-10T12:31:25+0100</when></TimeStamp>
+<Point><coordinates>-1.888757,52.989828,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:34:19 
+</description> 
+<TimeStamp><when>2010-08-10T12:34:19+0100</when></TimeStamp>
+<Point><coordinates>-1.888473,52.989769,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:35:44 
+</description> 
+<TimeStamp><when>2010-08-10T12:35:44+0100</when></TimeStamp>
+<Point><coordinates>-1.888178,52.989732,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:36:09 
+</description> 
+<TimeStamp><when>2010-08-10T12:36:09+0100</when></TimeStamp>
+<Point><coordinates>-1.887872,52.989774,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:36:42 
+</description> 
+<TimeStamp><when>2010-08-10T12:36:42+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:36:56 
+</description> 
+<TimeStamp><when>2010-08-10T12:36:56+0100</when></TimeStamp>
+<Point><coordinates>-1.887347,52.990069,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:37:19 
+</description> 
+<TimeStamp><when>2010-08-10T12:37:19+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:37:38 
+</description> 
+<TimeStamp><when>2010-08-10T12:37:38+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:37:59 
+</description> 
+<TimeStamp><when>2010-08-10T12:37:59+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:38:20 
+</description> 
+<TimeStamp><when>2010-08-10T12:38:20+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:38:39 
+</description> 
+<TimeStamp><when>2010-08-10T12:38:39+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:38:57 
+</description> 
+<TimeStamp><when>2010-08-10T12:38:57+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:39:17 
+</description> 
+<TimeStamp><when>2010-08-10T12:39:17+0100</when></TimeStamp>
+<Point><coordinates>-1.886161,52.989951,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 11:39:46 
+</description> 
+<TimeStamp><when>2010-08-10T12:39:46+0100</when></TimeStamp>
+<Point><coordinates>-1.88592,52.989839,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:04:10 
+</description> 
+<TimeStamp><when>2010-08-10T14:04:10+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:04:40 
+</description> 
+<TimeStamp><when>2010-08-10T14:04:40+0100</when></TimeStamp>
+<Point><coordinates>-1.88556,52.989989,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:05:16 
+</description> 
+<TimeStamp><when>2010-08-10T14:05:16+0100</when></TimeStamp>
+<Point><coordinates>-1.885319,52.989882,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:05:35 
+</description> 
+<TimeStamp><when>2010-08-10T14:05:35+0100</when></TimeStamp>
+<Point><coordinates>-1.885212,52.989705,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:05:53 
+</description> 
+<TimeStamp><when>2010-08-10T14:05:53+0100</when></TimeStamp>
+<Point><coordinates>-1.884959,52.989592,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:06:18 
+</description> 
+<TimeStamp><when>2010-08-10T14:06:18+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:06:40 
+</description> 
+<TimeStamp><when>2010-08-10T14:06:40+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:07:03 
+</description> 
+<TimeStamp><when>2010-08-10T14:07:03+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:09:10 
+</description> 
+<TimeStamp><when>2010-08-10T14:09:10+0100</when></TimeStamp>
+<Point><coordinates>-1.884584,52.988702,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:09:26 
+</description> 
+<TimeStamp><when>2010-08-10T14:09:26+0100</when></TimeStamp>
+<Point><coordinates>-1.884493,52.98853,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:09:59 
+</description> 
+<TimeStamp><when>2010-08-10T14:09:59+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:10:19 
+</description> 
+<TimeStamp><when>2010-08-10T14:10:19+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:10:38 
+</description> 
+<TimeStamp><when>2010-08-10T14:10:38+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:10:55 
+</description> 
+<TimeStamp><when>2010-08-10T14:10:55+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:11:13 
+</description> 
+<TimeStamp><when>2010-08-10T14:11:13+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:11:30 
+</description> 
+<TimeStamp><when>2010-08-10T14:11:30+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:11:49 
+</description> 
+<TimeStamp><when>2010-08-10T14:11:49+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:12:06 
+</description> 
+<TimeStamp><when>2010-08-10T14:12:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:12:20 
+</description> 
+<TimeStamp><when>2010-08-10T14:12:20+0100</when></TimeStamp>
+<Point><coordinates>-1.883602,52.987071,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:13:09 
+</description> 
+<TimeStamp><when>2010-08-10T14:13:09+0100</when></TimeStamp>
+<Point><coordinates>-1.883592,52.987259,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:13:38 
+</description> 
+<TimeStamp><when>2010-08-10T14:13:38+0100</when></TimeStamp>
+<Point><coordinates>-1.883699,52.987468,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:14:05 
+</description> 
+<TimeStamp><when>2010-08-10T14:14:05+0100</when></TimeStamp>
+<Point><coordinates>-1.883431,52.987591,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:17:01 
+</description> 
+<TimeStamp><when>2010-08-10T14:17:01+0100</when></TimeStamp>
+<Point><coordinates>-1.883119,52.987554,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:18:51 
+</description> 
+<TimeStamp><when>2010-08-10T14:18:51+0100</when></TimeStamp>
+<Point><coordinates>-1.883549,52.987253,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:23:16 
+</description> 
+<TimeStamp><when>2010-08-10T14:23:16+0100</when></TimeStamp>
+<Point><coordinates>-1.883254,52.987173,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:26:54 
+</description> 
+<TimeStamp><when>2010-08-10T14:26:54+0100</when></TimeStamp>
+<Point><coordinates>-1.882942,52.987183,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:32:07 
+</description> 
+<TimeStamp><when>2010-08-10T14:32:07+0100</when></TimeStamp>
+<Point><coordinates>-1.882717,52.987033,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:32:16 
+</description> 
+<TimeStamp><when>2010-08-10T14:32:16+0100</when></TimeStamp>
+<Point><coordinates>-1.882588,52.986867,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:33:45 
+</description> 
+<TimeStamp><when>2010-08-10T14:33:45+0100</when></TimeStamp>
+<Point><coordinates>-1.882637,52.987049,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:38:34 
+</description> 
+<TimeStamp><when>2010-08-10T14:38:34+0100</when></TimeStamp>
+<Point><coordinates>-1.882792,52.987205,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:38:45 
+</description> 
+<TimeStamp><when>2010-08-10T14:38:45+0100</when></TimeStamp>
+<Point><coordinates>-1.882857,52.987382,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:08 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:08+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:10 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:10+0100</when></TimeStamp>
+<Point><coordinates>-1.883345,52.986958,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:14 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:14+0100</when></TimeStamp>
+<Point><coordinates>-1.882873,52.986894,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:16 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:16+0100</when></TimeStamp>
+<Point><coordinates>-1.882497,52.986969,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:17 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:17+0100</when></TimeStamp>
+<Point><coordinates>-1.882197,52.986942,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:38 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:38+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:41 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:41+0100</when></TimeStamp>
+<Point><coordinates>-1.882588,52.98662,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:39:47 
+</description> 
+<TimeStamp><when>2010-08-10T14:39:47+0100</when></TimeStamp>
+<Point><coordinates>-1.88269,52.986797,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:40:23 
+</description> 
+<TimeStamp><when>2010-08-10T14:40:23+0100</when></TimeStamp>
+<Point><coordinates>-1.883028,52.98691,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:41:02 
+</description> 
+<TimeStamp><when>2010-08-10T14:41:02+0100</when></TimeStamp>
+<Point><coordinates>-1.882932,52.986733,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:44:24 
+</description> 
+<TimeStamp><when>2010-08-10T14:44:24+0100</when></TimeStamp>
+<Point><coordinates>-1.883189,52.986829,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:47:05 
+</description> 
+<TimeStamp><when>2010-08-10T14:47:05+0100</when></TimeStamp>
+<Point><coordinates>-1.883484,52.986931,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:47:55 
+</description> 
+<TimeStamp><when>2010-08-10T14:47:55+0100</when></TimeStamp>
+<Point><coordinates>-1.883752,52.987022,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:48:31 
+</description> 
+<TimeStamp><when>2010-08-10T14:48:31+0100</when></TimeStamp>
+<Point><coordinates>-1.884026,52.987098,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:53:12 
+</description> 
+<TimeStamp><when>2010-08-10T14:53:12+0100</when></TimeStamp>
+<Point><coordinates>-1.884267,52.987205,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:54:21 
+</description> 
+<TimeStamp><when>2010-08-10T14:54:21+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:54:41 
+</description> 
+<TimeStamp><when>2010-08-10T14:54:41+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:55:00 
+</description> 
+<TimeStamp><when>2010-08-10T14:55:00+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:55:39 
+</description> 
+<TimeStamp><when>2010-08-10T14:55:39+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:56:03 
+</description> 
+<TimeStamp><when>2010-08-10T14:56:03+0100</when></TimeStamp>
+<Point><coordinates>-1.884579,52.98868,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:56:08 
+</description> 
+<TimeStamp><when>2010-08-10T14:56:08+0100</when></TimeStamp>
+<Point><coordinates>-1.884739,52.988846,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:56:28 
+</description> 
+<TimeStamp><when>2010-08-10T14:56:28+0100</when></TimeStamp>
+<Point><coordinates>-1.884621,52.989013,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:57:45 
+</description> 
+<TimeStamp><when>2010-08-10T14:57:45+0100</when></TimeStamp>
+<Point><coordinates>-1.884772,52.989431,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:58:06 
+</description> 
+<TimeStamp><when>2010-08-10T14:58:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:58:24 
+</description> 
+<TimeStamp><when>2010-08-10T14:58:24+0100</when></TimeStamp>
+<Point><coordinates>-1.885485,52.989903,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:58:40 
+</description> 
+<TimeStamp><when>2010-08-10T14:58:40+0100</when></TimeStamp>
+<Point><coordinates>-1.885786,52.98986,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:59:11 
+</description> 
+<TimeStamp><when>2010-08-10T14:59:11+0100</when></TimeStamp>
+<Point><coordinates>-1.886054,52.989941,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:59:23 
+</description> 
+<TimeStamp><when>2010-08-10T14:59:23+0100</when></TimeStamp>
+<Point><coordinates>-1.886215,52.990102,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 13:59:49 
+</description> 
+<TimeStamp><when>2010-08-10T14:59:49+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:00:20 
+</description> 
+<TimeStamp><when>2010-08-10T15:00:20+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:00:47 
+</description> 
+<TimeStamp><when>2010-08-10T15:00:47+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:01:14 
+</description> 
+<TimeStamp><when>2010-08-10T15:01:14+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:01:35 
+</description> 
+<TimeStamp><when>2010-08-10T15:01:35+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:02:01 
+</description> 
+<TimeStamp><when>2010-08-10T15:02:01+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:02:07 
+</description> 
+<TimeStamp><when>2010-08-10T15:02:07+0100</when></TimeStamp>
+<Point><coordinates>-1.887867,52.989807,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:02:16 
+</description> 
+<TimeStamp><when>2010-08-10T15:02:16+0100</when></TimeStamp>
+<Point><coordinates>-1.888183,52.989801,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:02:37 
+</description> 
+<TimeStamp><when>2010-08-10T15:02:37+0100</when></TimeStamp>
+<Point><coordinates>-1.888489,52.989812,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:03:00 
+</description> 
+<TimeStamp><when>2010-08-10T15:03:00+0100</when></TimeStamp>
+<Point><coordinates>-1.888795,52.989791,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:03:28 
+</description> 
+<TimeStamp><when>2010-08-10T15:03:28+0100</when></TimeStamp>
+<Point><coordinates>-1.889042,52.989683,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:03:41 
+</description> 
+<TimeStamp><when>2010-08-10T15:03:41+0100</when></TimeStamp>
+<Point><coordinates>-1.889213,52.989528,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:03:55 
+</description> 
+<TimeStamp><when>2010-08-10T15:03:55+0100</when></TimeStamp>
+<Point><coordinates>-1.889449,52.989388,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:04:15 
+</description> 
+<TimeStamp><when>2010-08-10T15:04:15+0100</when></TimeStamp>
+<Point><coordinates>-1.889669,52.989259,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:04:29 
+</description> 
+<TimeStamp><when>2010-08-10T15:04:29+0100</when></TimeStamp>
+<Point><coordinates>-1.889798,52.989082,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:04:49 
+</description> 
+<TimeStamp><when>2010-08-10T15:04:49+0100</when></TimeStamp>
+<Point><coordinates>-1.890115,52.989125,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:05:05 
+</description> 
+<TimeStamp><when>2010-08-10T15:05:05+0100</when></TimeStamp>
+<Point><coordinates>-1.89041,52.989184,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:05:20 
+</description> 
+<TimeStamp><when>2010-08-10T15:05:20+0100</when></TimeStamp>
+<Point><coordinates>-1.890635,52.989308,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:05:45 
+</description> 
+<TimeStamp><when>2010-08-10T15:05:45+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:06:06 
+</description> 
+<TimeStamp><when>2010-08-10T15:06:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:06:34 
+</description> 
+<TimeStamp><when>2010-08-10T15:06:34+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:06:56 
+</description> 
+<TimeStamp><when>2010-08-10T15:06:56+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:07:18 
+</description> 
+<TimeStamp><when>2010-08-10T15:07:18+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:07:32 
+</description> 
+<TimeStamp><when>2010-08-10T15:07:32+0100</when></TimeStamp>
+<Point><coordinates>-1.892051,52.989495,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:07:46 
+</description> 
+<TimeStamp><when>2010-08-10T15:07:46+0100</when></TimeStamp>
+<Point><coordinates>-1.892384,52.989501,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:08:00 
+</description> 
+<TimeStamp><when>2010-08-10T15:08:00+0100</when></TimeStamp>
+<Point><coordinates>-1.89269,52.989442,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:08:23 
+</description> 
+<TimeStamp><when>2010-08-10T15:08:23+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:08:46 
+</description> 
+<TimeStamp><when>2010-08-10T15:08:46+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:09:14 
+</description> 
+<TimeStamp><when>2010-08-10T15:09:14+0100</when></TimeStamp>
+<Point><coordinates>-1.893661,52.988916,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:10:24 
+</description> 
+<TimeStamp><when>2010-08-10T15:10:24+0100</when></TimeStamp>
+<Point><coordinates>-1.893988,52.988927,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:20:24 
+</description> 
+<TimeStamp><when>2010-08-10T15:20:24+0100</when></TimeStamp>
+<Point><coordinates>-1.894159,52.989077,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:24:54 
+</description> 
+<TimeStamp><when>2010-08-10T15:24:54+0100</when></TimeStamp>
+<Point><coordinates>-1.894412,52.989174,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:41:48 
+</description> 
+<TimeStamp><when>2010-08-10T15:41:48+0100</when></TimeStamp>
+<Point><coordinates>-1.894572,52.989007,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 14:55:02 
+</description> 
+<TimeStamp><when>2010-08-10T15:55:02+0100</when></TimeStamp>
+<Point><coordinates>-1.894283,52.988921,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:05:03 
+</description> 
+<TimeStamp><when>2010-08-10T16:05:03+0100</when></TimeStamp>
+<Point><coordinates>-1.894063,52.989045,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:11:55 
+</description> 
+<TimeStamp><when>2010-08-10T16:11:55+0100</when></TimeStamp>
+<Point><coordinates>-1.893918,52.988873,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:12:32 
+</description> 
+<TimeStamp><when>2010-08-10T16:12:32+0100</when></TimeStamp>
+<Point><coordinates>-1.893639,52.988943,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:12:51 
+</description> 
+<TimeStamp><when>2010-08-10T16:12:51+0100</when></TimeStamp>
+<Point><coordinates>-1.893489,52.989099,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:13:18 
+</description> 
+<TimeStamp><when>2010-08-10T16:13:18+0100</when></TimeStamp>
+<Point><coordinates>-1.893355,52.989259,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:13:39 
+</description> 
+<TimeStamp><when>2010-08-10T16:13:39+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:13:55 
+</description> 
+<TimeStamp><when>2010-08-10T16:13:55+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:14:13 
+</description> 
+<TimeStamp><when>2010-08-10T16:14:13+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:22:02 
+</description> 
+<TimeStamp><when>2010-08-10T16:22:02+0100</when></TimeStamp>
+<Point><coordinates>-1.89269,52.98971,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:22:29 
+</description> 
+<TimeStamp><when>2010-08-10T16:22:29+0100</when></TimeStamp>
+<Point><coordinates>-1.892395,52.989742,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-10 15:22:57 
+</description> 
+<TimeStamp><when>2010-08-10T16:22:57+0100</when></TimeStamp>
+<Point><coordinates>-1.892287,52.989914,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 05:46:39 
+</description> 
+<TimeStamp><when>2010-08-11T06:46:39+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:33:16 
+</description> 
+<TimeStamp><when>2010-08-11T10:33:16+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:52:06 
+</description> 
+<TimeStamp><when>2010-08-11T10:52:06+0100</when></TimeStamp>
+<Point><coordinates>-1.892293,52.989785,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:52:24 
+</description> 
+<TimeStamp><when>2010-08-11T10:52:24+0100</when></TimeStamp>
+<Point><coordinates>-1.892588,52.989667,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:52:41 
+</description> 
+<TimeStamp><when>2010-08-11T10:52:41+0100</when></TimeStamp>
+<Point><coordinates>-1.892888,52.98963,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:53:12 
+</description> 
+<TimeStamp><when>2010-08-11T10:53:12+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:53:30 
+</description> 
+<TimeStamp><when>2010-08-11T10:53:30+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:53:45 
+</description> 
+<TimeStamp><when>2010-08-11T10:53:45+0100</when></TimeStamp>
+<Point><coordinates>-1.893505,52.989072,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:54:01 
+</description> 
+<TimeStamp><when>2010-08-11T10:54:01+0100</when></TimeStamp>
+<Point><coordinates>-1.893618,52.9889,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:54:19 
+</description> 
+<TimeStamp><when>2010-08-11T10:54:19+0100</when></TimeStamp>
+<Point><coordinates>-1.893687,52.988723,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:54:39 
+</description> 
+<TimeStamp><when>2010-08-11T10:54:39+0100</when></TimeStamp>
+<Point><coordinates>-1.893736,52.988508,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:54:55 
+</description> 
+<TimeStamp><when>2010-08-11T10:54:55+0100</when></TimeStamp>
+<Point><coordinates>-1.893779,52.988326,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:55:13 
+</description> 
+<TimeStamp><when>2010-08-11T10:55:13+0100</when></TimeStamp>
+<Point><coordinates>-1.893891,52.988154,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:55:40 
+</description> 
+<TimeStamp><when>2010-08-11T10:55:40+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:55:57 
+</description> 
+<TimeStamp><when>2010-08-11T10:55:57+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:56:16 
+</description> 
+<TimeStamp><when>2010-08-11T10:56:16+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:56:34 
+</description> 
+<TimeStamp><when>2010-08-11T10:56:34+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:57:08 
+</description> 
+<TimeStamp><when>2010-08-11T10:57:08+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:57:25 
+</description> 
+<TimeStamp><when>2010-08-11T10:57:25+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:57:43 
+</description> 
+<TimeStamp><when>2010-08-11T10:57:43+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:58:02 
+</description> 
+<TimeStamp><when>2010-08-11T10:58:02+0100</when></TimeStamp>
+<Point><coordinates>-1.895672,52.987022,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:58:21 
+</description> 
+<TimeStamp><when>2010-08-11T10:58:21+0100</when></TimeStamp>
+<Point><coordinates>-1.895973,52.987082,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 09:59:49 
+</description> 
+<TimeStamp><when>2010-08-11T10:59:49+0100</when></TimeStamp>
+<Point><coordinates>-1.896241,52.98698,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:00:17 
+</description> 
+<TimeStamp><when>2010-08-11T11:00:17+0100</when></TimeStamp>
+<Point><coordinates>-1.896536,52.986883,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:00:33 
+</description> 
+<TimeStamp><when>2010-08-11T11:00:33+0100</when></TimeStamp>
+<Point><coordinates>-1.896842,52.986845,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:01:00 
+</description> 
+<TimeStamp><when>2010-08-11T11:01:00+0100</when></TimeStamp>
+<Point><coordinates>-1.896826,52.986658,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:01:22 
+</description> 
+<TimeStamp><when>2010-08-11T11:01:22+0100</when></TimeStamp>
+<Point><coordinates>-1.89645,52.98662,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:01:44 
+</description> 
+<TimeStamp><when>2010-08-11T11:01:44+0100</when></TimeStamp>
+<Point><coordinates>-1.896182,52.986706,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:02:15 
+</description> 
+<TimeStamp><when>2010-08-11T11:02:15+0100</when></TimeStamp>
+<Point><coordinates>-1.896391,52.986835,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:02:36 
+</description> 
+<TimeStamp><when>2010-08-11T11:02:36+0100</when></TimeStamp>
+<Point><coordinates>-1.896691,52.986797,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:03:26 
+</description> 
+<TimeStamp><when>2010-08-11T11:03:26+0100</when></TimeStamp>
+<Point><coordinates>-1.896268,52.986615,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:06:38 
+</description> 
+<TimeStamp><when>2010-08-11T11:06:38+0100</when></TimeStamp>
+<Point><coordinates>-1.896348,52.986803,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:23:02 
+</description> 
+<TimeStamp><when>2010-08-11T11:23:02+0100</when></TimeStamp>
+<Point><coordinates>-1.896311,52.98662,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:23:54 
+</description> 
+<TimeStamp><when>2010-08-11T11:23:54+0100</when></TimeStamp>
+<Point><coordinates>-1.89608,52.986502,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:24:11 
+</description> 
+<TimeStamp><when>2010-08-11T11:24:11+0100</when></TimeStamp>
+<Point><coordinates>-1.895779,52.98647,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:28:19 
+</description> 
+<TimeStamp><when>2010-08-11T11:28:19+0100</when></TimeStamp>
+<Point><coordinates>-1.895527,52.986567,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:30:05 
+</description> 
+<TimeStamp><when>2010-08-11T11:30:05+0100</when></TimeStamp>
+<Point><coordinates>-1.895597,52.986744,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:30:46 
+</description> 
+<TimeStamp><when>2010-08-11T11:30:46+0100</when></TimeStamp>
+<Point><coordinates>-1.895699,52.986921,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:31:10 
+</description> 
+<TimeStamp><when>2010-08-11T11:31:10+0100</when></TimeStamp>
+<Point><coordinates>-1.895833,52.987087,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:31:27 
+</description> 
+<TimeStamp><when>2010-08-11T11:31:27+0100</when></TimeStamp>
+<Point><coordinates>-1.896134,52.987065,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:31:47 
+</description> 
+<TimeStamp><when>2010-08-11T11:31:47+0100</when></TimeStamp>
+<Point><coordinates>-1.896455,52.987028,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:38:47 
+</description> 
+<TimeStamp><when>2010-08-11T11:38:47+0100</when></TimeStamp>
+<Point><coordinates>-1.896761,52.98699,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:54:04 
+</description> 
+<TimeStamp><when>2010-08-11T11:54:04+0100</when></TimeStamp>
+<Point><coordinates>-1.896777,52.987178,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:58:09 
+</description> 
+<TimeStamp><when>2010-08-11T11:58:09+0100</when></TimeStamp>
+<Point><coordinates>-1.896482,52.987135,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:59:10 
+</description> 
+<TimeStamp><when>2010-08-11T11:59:10+0100</when></TimeStamp>
+<Point><coordinates>-1.896182,52.987146,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 10:59:53 
+</description> 
+<TimeStamp><when>2010-08-11T11:59:53+0100</when></TimeStamp>
+<Point><coordinates>-1.895876,52.98713,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:00:18 
+</description> 
+<TimeStamp><when>2010-08-11T12:00:18+0100</when></TimeStamp>
+<Point><coordinates>-1.895592,52.98706,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:00:36 
+</description> 
+<TimeStamp><when>2010-08-11T12:00:36+0100</when></TimeStamp>
+<Point><coordinates>-1.895307,52.987006,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:01:03 
+</description> 
+<TimeStamp><when>2010-08-11T12:01:03+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:01:21 
+</description> 
+<TimeStamp><when>2010-08-11T12:01:21+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:01:39 
+</description> 
+<TimeStamp><when>2010-08-11T12:01:39+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:01:57 
+</description> 
+<TimeStamp><when>2010-08-11T12:01:57+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:02:29 
+</description> 
+<TimeStamp><when>2010-08-11T12:02:29+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:03:05 
+</description> 
+<TimeStamp><when>2010-08-11T12:03:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:03:37 
+</description> 
+<TimeStamp><when>2010-08-11T12:03:37+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:04:10 
+</description> 
+<TimeStamp><when>2010-08-11T12:04:10+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:04:44 
+</description> 
+<TimeStamp><when>2010-08-11T12:04:44+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:05:24 
+</description> 
+<TimeStamp><when>2010-08-11T12:05:24+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:05:44 
+</description> 
+<TimeStamp><when>2010-08-11T12:05:44+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:06:03 
+</description> 
+<TimeStamp><when>2010-08-11T12:06:03+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:06:26 
+</description> 
+<TimeStamp><when>2010-08-11T12:06:26+0100</when></TimeStamp>
+<Point><coordinates>-1.892534,52.985392,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:06:45 
+</description> 
+<TimeStamp><when>2010-08-11T12:06:45+0100</when></TimeStamp>
+<Point><coordinates>-1.892169,52.985349,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:07:02 
+</description> 
+<TimeStamp><when>2010-08-11T12:07:02+0100</when></TimeStamp>
+<Point><coordinates>-1.891901,52.985268,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:07:15 
+</description> 
+<TimeStamp><when>2010-08-11T12:07:15+0100</when></TimeStamp>
+<Point><coordinates>-1.891681,52.98514,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:07:36 
+</description> 
+<TimeStamp><when>2010-08-11T12:07:36+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:07:54 
+</description> 
+<TimeStamp><when>2010-08-11T12:07:54+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:08:12 
+</description> 
+<TimeStamp><when>2010-08-11T12:08:12+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:08:36 
+</description> 
+<TimeStamp><when>2010-08-11T12:08:36+0100</when></TimeStamp>
+<Point><coordinates>-1.89041,52.985193,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:08:54 
+</description> 
+<TimeStamp><when>2010-08-11T12:08:54+0100</when></TimeStamp>
+<Point><coordinates>-1.890131,52.985081,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:12:29 
+</description> 
+<TimeStamp><when>2010-08-11T12:12:29+0100</when></TimeStamp>
+<Point><coordinates>-1.889954,52.984936,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:19:26 
+</description> 
+<TimeStamp><when>2010-08-11T12:19:26+0100</when></TimeStamp>
+<Point><coordinates>-1.890045,52.984764,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:53:41 
+</description> 
+<TimeStamp><when>2010-08-11T12:53:41+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 11:58:07 
+</description> 
+<TimeStamp><when>2010-08-11T12:58:07+0100</when></TimeStamp>
+<Point><coordinates>-1.890785,52.985022,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:03:11 
+</description> 
+<TimeStamp><when>2010-08-11T13:03:11+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:03:29 
+</description> 
+<TimeStamp><when>2010-08-11T13:03:29+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:03:47 
+</description> 
+<TimeStamp><when>2010-08-11T13:03:47+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:04:05 
+</description> 
+<TimeStamp><when>2010-08-11T13:04:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:04:23 
+</description> 
+<TimeStamp><when>2010-08-11T13:04:23+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:04:42 
+</description> 
+<TimeStamp><when>2010-08-11T13:04:42+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:04:59 
+</description> 
+<TimeStamp><when>2010-08-11T13:04:59+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:05:17 
+</description> 
+<TimeStamp><when>2010-08-11T13:05:17+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:05:34 
+</description> 
+<TimeStamp><when>2010-08-11T13:05:34+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:05:53 
+</description> 
+<TimeStamp><when>2010-08-11T13:05:53+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:06:11 
+</description> 
+<TimeStamp><when>2010-08-11T13:06:11+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:06:29 
+</description> 
+<TimeStamp><when>2010-08-11T13:06:29+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:06:47 
+</description> 
+<TimeStamp><when>2010-08-11T13:06:47+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:07:05 
+</description> 
+<TimeStamp><when>2010-08-11T13:07:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:07:23 
+</description> 
+<TimeStamp><when>2010-08-11T13:07:23+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:07:40 
+</description> 
+<TimeStamp><when>2010-08-11T13:07:40+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:08:00 
+</description> 
+<TimeStamp><when>2010-08-11T13:08:00+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:08:17 
+</description> 
+<TimeStamp><when>2010-08-11T13:08:17+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:08:51 
+</description> 
+<TimeStamp><when>2010-08-11T13:08:51+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:09:08 
+</description> 
+<TimeStamp><when>2010-08-11T13:09:08+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:09:26 
+</description> 
+<TimeStamp><when>2010-08-11T13:09:26+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:09:45 
+</description> 
+<TimeStamp><when>2010-08-11T13:09:45+0100</when></TimeStamp>
+<Point><coordinates>-1.890501,52.985134,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:10:08 
+</description> 
+<TimeStamp><when>2010-08-11T13:10:08+0100</when></TimeStamp>
+<Point><coordinates>-1.890184,52.985145,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:10:30 
+</description> 
+<TimeStamp><when>2010-08-11T13:10:30+0100</when></TimeStamp>
+<Point><coordinates>-1.889964,52.985022,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:10:46 
+</description> 
+<TimeStamp><when>2010-08-11T13:10:46+0100</when></TimeStamp>
+<Point><coordinates>-1.88968,52.984941,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:11:54 
+</description> 
+<TimeStamp><when>2010-08-11T13:11:54+0100</when></TimeStamp>
+<Point><coordinates>-1.889895,52.985081,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:12:14 
+</description> 
+<TimeStamp><when>2010-08-11T13:12:14+0100</when></TimeStamp>
+<Point><coordinates>-1.890152,52.985204,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:12:28 
+</description> 
+<TimeStamp><when>2010-08-11T13:12:28+0100</when></TimeStamp>
+<Point><coordinates>-1.890479,52.985123,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:12:43 
+</description> 
+<TimeStamp><when>2010-08-11T13:12:43+0100</when></TimeStamp>
+<Point><coordinates>-1.890774,52.985086,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:13:19 
+</description> 
+<TimeStamp><when>2010-08-11T13:13:19+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:13:37 
+</description> 
+<TimeStamp><when>2010-08-11T13:13:37+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:13:54 
+</description> 
+<TimeStamp><when>2010-08-11T13:13:54+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:14:12 
+</description> 
+<TimeStamp><when>2010-08-11T13:14:12+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:14:29 
+</description> 
+<TimeStamp><when>2010-08-11T13:14:29+0100</when></TimeStamp>
+<Point><coordinates>-1.892395,52.984662,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:15:36 
+</description> 
+<TimeStamp><when>2010-08-11T13:15:36+0100</when></TimeStamp>
+<Point><coordinates>-1.892625,52.984544,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:22:17 
+</description> 
+<TimeStamp><when>2010-08-11T13:22:17+0100</when></TimeStamp>
+<Point><coordinates>-1.892277,52.984662,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:22:20 
+</description> 
+<TimeStamp><when>2010-08-11T13:22:20+0100</when></TimeStamp>
+<Point><coordinates>-1.891976,52.984619,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:22:42 
+</description> 
+<TimeStamp><when>2010-08-11T13:22:42+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:22:50 
+</description> 
+<TimeStamp><when>2010-08-11T13:22:50+0100</when></TimeStamp>
+<Point><coordinates>-1.890635,52.985107,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:22:59 
+</description> 
+<TimeStamp><when>2010-08-11T13:22:59+0100</when></TimeStamp>
+<Point><coordinates>-1.890345,52.985177,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:23:10 
+</description> 
+<TimeStamp><when>2010-08-11T13:23:10+0100</when></TimeStamp>
+<Point><coordinates>-1.890013,52.985258,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:23:19 
+</description> 
+<TimeStamp><when>2010-08-11T13:23:19+0100</when></TimeStamp>
+<Point><coordinates>-1.889734,52.98536,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:23:45 
+</description> 
+<TimeStamp><when>2010-08-11T13:23:45+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:24:04 
+</description> 
+<TimeStamp><when>2010-08-11T13:24:04+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:24:38 
+</description> 
+<TimeStamp><when>2010-08-11T13:24:38+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:27:06 
+</description> 
+<TimeStamp><when>2010-08-11T13:27:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:27:42 
+</description> 
+<TimeStamp><when>2010-08-11T13:27:42+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:28:15 
+</description> 
+<TimeStamp><when>2010-08-11T13:28:15+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:28:49 
+</description> 
+<TimeStamp><when>2010-08-11T13:28:49+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:06 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:14 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:14+0100</when></TimeStamp>
+<Point><coordinates>-1.889423,52.988932,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:23 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:23+0100</when></TimeStamp>
+<Point><coordinates>-1.889691,52.98904,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:34 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:34+0100</when></TimeStamp>
+<Point><coordinates>-1.889975,52.9892,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:44 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:44+0100</when></TimeStamp>
+<Point><coordinates>-1.890243,52.989313,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:29:52 
+</description> 
+<TimeStamp><when>2010-08-11T13:29:52+0100</when></TimeStamp>
+<Point><coordinates>-1.890501,52.989458,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:30:14 
+</description> 
+<TimeStamp><when>2010-08-11T13:30:14+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:30:34 
+</description> 
+<TimeStamp><when>2010-08-11T13:30:34+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:30:52 
+</description> 
+<TimeStamp><when>2010-08-11T13:30:52+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:31:10 
+</description> 
+<TimeStamp><when>2010-08-11T13:31:10+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:31:27 
+</description> 
+<TimeStamp><when>2010-08-11T13:31:27+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:31:45 
+</description> 
+<TimeStamp><when>2010-08-11T13:31:45+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:32:02 
+</description> 
+<TimeStamp><when>2010-08-11T13:32:02+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:32:43 
+</description> 
+<TimeStamp><when>2010-08-11T13:32:43+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:33:01 
+</description> 
+<TimeStamp><when>2010-08-11T13:33:01+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:33:18 
+</description> 
+<TimeStamp><when>2010-08-11T13:33:18+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:34:18 
+</description> 
+<TimeStamp><when>2010-08-11T13:34:18+0100</when></TimeStamp>
+<Point><coordinates>-1.889337,52.989732,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:34:51 
+</description> 
+<TimeStamp><when>2010-08-11T13:34:51+0100</when></TimeStamp>
+<Point><coordinates>-1.88931,52.989528,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:35:13 
+</description> 
+<TimeStamp><when>2010-08-11T13:35:13+0100</when></TimeStamp>
+<Point><coordinates>-1.889449,52.989367,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:35:26 
+</description> 
+<TimeStamp><when>2010-08-11T13:35:26+0100</when></TimeStamp>
+<Point><coordinates>-1.8896,52.989206,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:36:25 
+</description> 
+<TimeStamp><when>2010-08-11T13:36:25+0100</when></TimeStamp>
+<Point><coordinates>-1.8899,52.989227,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:37:24 
+</description> 
+<TimeStamp><when>2010-08-11T13:37:24+0100</when></TimeStamp>
+<Point><coordinates>-1.890147,52.989329,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:37:44 
+</description> 
+<TimeStamp><when>2010-08-11T13:37:44+0100</when></TimeStamp>
+<Point><coordinates>-1.890442,52.989404,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:37:58 
+</description> 
+<TimeStamp><when>2010-08-11T13:37:58+0100</when></TimeStamp>
+<Point><coordinates>-1.890399,52.989592,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:38:20 
+</description> 
+<TimeStamp><when>2010-08-11T13:38:20+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:38:38 
+</description> 
+<TimeStamp><when>2010-08-11T13:38:38+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 12:38:56 
+</description> 
+<TimeStamp><when>2010-08-11T13:38:56+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:05:24 
+</description> 
+<TimeStamp><when>2010-08-11T14:05:24+0100</when></TimeStamp>
+<Point><coordinates>-1.889412,52.989769,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:06:14 
+</description> 
+<TimeStamp><when>2010-08-11T14:06:14+0100</when></TimeStamp>
+<Point><coordinates>-1.889337,52.98956,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:06:30 
+</description> 
+<TimeStamp><when>2010-08-11T14:06:30+0100</when></TimeStamp>
+<Point><coordinates>-1.889433,52.989388,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:12:56 
+</description> 
+<TimeStamp><when>2010-08-11T14:12:56+0100</when></TimeStamp>
+<Point><coordinates>-1.889551,52.9892,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:14:14 
+</description> 
+<TimeStamp><when>2010-08-11T14:14:14+0100</when></TimeStamp>
+<Point><coordinates>-1.889718,52.989045,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:14:44 
+</description> 
+<TimeStamp><when>2010-08-11T14:14:44+0100</when></TimeStamp>
+<Point><coordinates>-1.890002,52.988986,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:15:11 
+</description> 
+<TimeStamp><when>2010-08-11T14:15:11+0100</when></TimeStamp>
+<Point><coordinates>-1.890222,52.989115,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:15:34 
+</description> 
+<TimeStamp><when>2010-08-11T14:15:34+0100</when></TimeStamp>
+<Point><coordinates>-1.890517,52.9892,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:16:11 
+</description> 
+<TimeStamp><when>2010-08-11T14:16:11+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:16:29 
+</description> 
+<TimeStamp><when>2010-08-11T14:16:29+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:16:46 
+</description> 
+<TimeStamp><when>2010-08-11T14:16:46+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:17:05 
+</description> 
+<TimeStamp><when>2010-08-11T14:17:05+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:17:22 
+</description> 
+<TimeStamp><when>2010-08-11T14:17:22+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:17:40 
+</description> 
+<TimeStamp><when>2010-08-11T14:17:40+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:17:57 
+</description> 
+<TimeStamp><when>2010-08-11T14:17:57+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:18:15 
+</description> 
+<TimeStamp><when>2010-08-11T14:18:15+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:18:32 
+</description> 
+<TimeStamp><when>2010-08-11T14:18:32+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:18:49 
+</description> 
+<TimeStamp><when>2010-08-11T14:18:49+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:19:06 
+</description> 
+<TimeStamp><when>2010-08-11T14:19:06+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:19:25 
+</description> 
+<TimeStamp><when>2010-08-11T14:19:25+0100</when></TimeStamp>
+<Point><coordinates>-1.893124,52.988519,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:19:48 
+</description> 
+<TimeStamp><when>2010-08-11T14:19:48+0100</when></TimeStamp>
+<Point><coordinates>-1.893446,52.98846,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:20:30 
+</description> 
+<TimeStamp><when>2010-08-11T14:20:30+0100</when></TimeStamp>
+<Point><coordinates>-1.893703,52.988567,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:20:58 
+</description> 
+<TimeStamp><when>2010-08-11T14:20:58+0100</when></TimeStamp>
+<Point><coordinates>-1.89373,52.988766,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:22:39 
+</description> 
+<TimeStamp><when>2010-08-11T14:22:39+0100</when></TimeStamp>
+<Point><coordinates>-1.893982,52.988873,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:24:07 
+</description> 
+<TimeStamp><when>2010-08-11T14:24:07+0100</when></TimeStamp>
+<Point><coordinates>-1.893918,52.988696,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 13:34:31 
+</description> 
+<TimeStamp><when>2010-08-11T14:34:31+0100</when></TimeStamp>
+<Point><coordinates>-1.894009,52.988868,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:02:34 
+</description> 
+<TimeStamp><when>2010-08-11T15:02:34+0100</when></TimeStamp>
+<Point><coordinates>-1.894111,52.988696,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:24:43 
+</description> 
+<TimeStamp><when>2010-08-11T15:24:43+0100</when></TimeStamp>
+<Point><coordinates>-1.894433,52.988761,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:41:10 
+</description> 
+<TimeStamp><when>2010-08-11T15:41:10+0100</when></TimeStamp>
+<Point><coordinates>-1.894674,52.988868,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:42:18 
+</description> 
+<TimeStamp><when>2010-08-11T15:42:18+0100</when></TimeStamp>
+<Point><coordinates>-1.894374,52.988927,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:47:25 
+</description> 
+<TimeStamp><when>2010-08-11T15:47:25+0100</when></TimeStamp>
+<Point><coordinates>-1.894106,52.989061,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:47:58 
+</description> 
+<TimeStamp><when>2010-08-11T15:47:58+0100</when></TimeStamp>
+<Point><coordinates>-1.893864,52.989174,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:48:10 
+</description> 
+<TimeStamp><when>2010-08-11T15:48:10+0100</when></TimeStamp>
+<Point><coordinates>-1.893639,52.989297,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:48:42 
+</description> 
+<TimeStamp><when>2010-08-11T15:48:42+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:49:00 
+</description> 
+<TimeStamp><when>2010-08-11T15:49:00+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:49:17 
+</description> 
+<TimeStamp><when>2010-08-11T15:49:17+0100</when></TimeStamp>
+<Point><coordinates>-1.0E-6,5.2E-5,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 14:49:31 
+</description> 
+<TimeStamp><when>2010-08-11T15:49:31+0100</when></TimeStamp>
+<Point><coordinates>-1.893065,52.989951,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 15:00:24 
+</description> 
+<TimeStamp><when>2010-08-11T16:00:24+0100</when></TimeStamp>
+<Point><coordinates>-1.892883,52.990102,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 15:17:17 
+</description> 
+<TimeStamp><when>2010-08-11T16:17:17+0100</when></TimeStamp>
+<Point><coordinates>-1.892566,52.990096,50</coordinates></Point>
+</Placemark>
+<Placemark> 
+ <description>Time: 2010-08-11 15:17:33 
+</description> 
+<TimeStamp><when>2010-08-11T16:17:33+0100</when></TimeStamp>
+<Point><coordinates>-1.892287,52.990032,50</coordinates></Point>
+</Placemark>
+</Document> 
+ </kml>
