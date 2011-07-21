@@ -74,6 +74,7 @@ public class LogReader {
 				}
 				else
 					logger.log(Level.WARNING, "No kml file found for "+datadir);
+				logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions");
 			}
 		}
 		return users;
@@ -97,6 +98,10 @@ public class LogReader {
 						String datetime = line.substring("<TimeStamp><when>".length(), ix);
 						Date date = dateformat.parse(datetime);
 						p.setTime(date.getTime());
+						if (p.getLat()!=0) {
+							positions.add(p);
+							p = null;
+						}
 					}
 					catch (Exception e ){
 						logger.log(Level.WARNING, "Error parsing date line "+line, e);
@@ -111,8 +116,10 @@ public class LogReader {
 							p.setTruncated(true);
 						p.setLon(Double.parseDouble(els[0]));
 						p.setLat(Double.parseDouble(els[1]));
-						if (p.getTime()!=0)
+						if (p.getTime()!=0) {
 							positions.add(p);
+							p = null;
+						}
 					}
 					catch (Exception e ) {
 						logger.log(Level.WARNING, "Error parsing position line "+line, e);

@@ -140,7 +140,7 @@ public class DrawTrails {
 //		return (float)(SCALE*(x-minX)/(maxX-minX));
 	}
 	private static float scaleY(double y) {
-		return (float)(SCALE*(0.5+(y-cY)/width));
+		return (float)(SCALE*(0.5-(y-cY)/width));
 //		return (float)(SCALE*(y-minY)/(maxY-minY));
 	}
 
