@@ -23,9 +23,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -146,6 +149,31 @@ public class DrawTrails {
 			drawEventsHod(svg, users, zones);
 			svg.close();
 			
+			Set<String> groups  = new HashSet<String>();
+			for (UserData u : users) {
+				groups.add(u.getTrialid());
+			}
+			for (String group : groups) {
+				logger.info("Group "+group);
+				svg = createBackgroundFile(new File(outdir,"allusershod-"+group+".svg"));
+				List<UserData> members = new LinkedList<UserData>();
+				for (UserData u : users) 
+					if (u.getTrialid().equals(group))
+						members.add(u);
+				drawPositionsHod(svg, members, false);
+				drawEventsHod(svg, members, zones);
+				svg.close();
+			}
+			for (UserData user : users) {
+				logger.info("User "+user.getTrialid()+" "+user.getTrialuserid());
+				svg = createBackgroundFile(new File(outdir,"allusershod-"+user.getTrialid()+"-"+user.getTrialuserid()+".svg"));
+				List<UserData> members = new LinkedList<UserData>();
+				members.add(user);
+				drawPositionsHod(svg, members, false);
+				drawEventsHod(svg, members, zones);
+				svg.close();
+			}
+			
 		} catch (Exception e) {
 			logger.log(Level.SEVERE, "Error creating "+args[1], e);
 		}		
@@ -162,27 +190,38 @@ public class DrawTrails {
 		for (UserData user : users) {
 			ci = ci+1 % colors.length;
 			String stroke = overrideStroke!=null ? overrideStroke : colors[ci];
-			Position lp = null;
-			for (Position p : user.getPositions()) {
-				if (lp!=null && !lp.isTruncated() && !p.isTruncated()) {
-					svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
-				}
-				lp = p;
-				if (showPoints)
-					svg.circle(scaleX(p.getX()), scaleY(p.getY()), 3, stroke, 0.4f, null);
-			}
+			drawPositions(svg, user, stroke, strokeWidth, showPoints);
 			for (Event e : user.getEvents()) {
 //				e.get
 			}
 		}
 		
 	}
+	private static void drawPositions(SvgFile svg, UserData user,
+			String stroke, float strokeWidth, boolean showPoints) {
+		Position lp = null;
+		Position lastGoodp = null;
+		for (Position p : user.getPositions()) {
+			if (lp!=null && !lp.isTruncated() && !p.isTruncated()) {
+				svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
+			}
+			else if (lastGoodp!=null && !p.isTruncated()) {
+				svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\"3 3\"");					
+				lastGoodp = null;
+			}
+			lp = p;
+			if (!p.isTruncated())
+				lastGoodp = p;
+			if (showPoints)
+				svg.circle(scaleX(p.getX()), scaleY(p.getY()), 3, stroke, 0.4f, null);
+		}		
+	}
 	private static String getColour(float value) {
 		if(value<0)
 			value = 0;
 		if (value>1)
 			value = 1;
-		return "#"+getHex(1-value)+"00"+getHex(value);
+		return "#"+getHex(1-value)+"f0"+getHex(value);
 	}
 	private static String getHex(float f) {
 		String red = Integer.toHexString((int)(255*f));
@@ -196,12 +235,19 @@ public class DrawTrails {
 		float strokeWidth = 0.5f;
 		for (UserData user : users) {
 			Position lp = null;
+			Position lastGoodp = null;
 			for (Position p : user.getPositions()) {
 				String stroke = getColour(scaleHod(p.getHourOfDay()));
 				if (lp!=null && !lp.isTruncated() && !p.isTruncated()) {
 					svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
 				}
+				else if (lastGoodp!=null && !p.isTruncated()) {
+					svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\"3 3\"");					
+					lastGoodp = null;
+				}
 				lp = p;
+				if (!p.isTruncated())
+					lastGoodp = p;
 				if (showPoints)
 					svg.circle(scaleX(p.getX()), scaleY(p.getY()), 3, stroke, 0.4f, null);
 			}
@@ -249,14 +295,17 @@ public class DrawTrails {
 						String fill = getZoneFill(z);
 						float rx = (float)((Math.random()-0.5)*JITTER);
 						float ry = (float)((Math.random()-0.5)*JITTER);
-						svg.circle(rx+scaleX(Mercator.mercX(z.getLon())),ry+scaleY(Mercator.mercY(z.getLat())), scaleD(z.getRadius()), stroke, 1.0f, fill,"fill-opacity=\"0.1\"");
+						float size = scaleD(z.getRadius());
+						if (size<1)
+							size = 1;
+						svg.circle(rx+scaleX(Mercator.mercX(z.getLon())),ry+scaleY(Mercator.mercY(z.getLat())), size, stroke, 1.0f, fill,"fill-opacity=\"0.1\"");
 					}
 				}
 			}
 		}
 		
 	}
-	static final double JITTER = 10;
+	static final double JITTER = 5;
 	/**
 	 * @param svg
 	 * @param zones
@@ -265,14 +314,17 @@ public class DrawTrails {
 	private static void drawZones(SvgFile svg, Map<Integer, Zone> zones) {
 		for (Zone z : zones.values()) {
 			String fill = getZoneFill(z);
-			svg.circle(scaleX(Mercator.mercX(z.getLon())),scaleY(Mercator.mercY(z.getLat())), scaleD(z.getRadius()), "#bbb", 1.0f, fill);
+			float size = scaleD(z.getRadius());
+			if (size<1)
+				size = 1;
+			svg.circle(scaleX(Mercator.mercX(z.getLon())),scaleY(Mercator.mercY(z.getLat())), size, "#bbb", 1.0f, fill);
 		}
 	}
 	/**
 	 * @param z
 	 * @return
 	 */
-	private static String getZoneFill(Zone z) {
+	public static String getZoneFill(Zone z) {
 		String fill = "#000";
 		if ("photo opportunity".equals(z.getType())) 
 			fill = "#00f";

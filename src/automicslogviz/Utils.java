@@ -29,5 +29,7 @@ public class Utils {
 	}
 	public static final long MS_PER_DAY = 1000*60*60*24;
 	public static final long MS_PER_HOUR = 1000*60*60;
-
+	public static int getDay(long time) {
+		return (int)(time / MS_PER_DAY);
+	}
 }

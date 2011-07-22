@@ -41,6 +41,7 @@ public class LogReader {
 	public static Map<Integer,Zone> readZones(File file) {
 		Map<Integer,Zone> zones = new HashMap<Integer,Zone>();
 		try {
+			int count = 0;
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			br.readLine();// header
 			while (true) {
@@ -58,8 +59,12 @@ public class LogReader {
 				z.setLat(Double.parseDouble(values[i++]));
 				z.setLon(Double.parseDouble(values[i++]));
 				zones.put(z.getTagId(), z);
+				logger.log(Level.INFO, "Read trigger "+z.getTagId()+": "+z.getComment()+" ("+DrawTrails.getZoneFill(z)+")");
+				count++;
 			}
 			br.close();
+			if (count>zones.size()) 
+				logger.log(Level.WARNING, "Only found "+zones.size()+"/"+count+" zones read");
 		}
 		catch (Exception e) {
 			logger.log(Level.SEVERE, "Error reading zone file "+file, e);
@@ -69,6 +74,7 @@ public class LogReader {
 	public static List<UserData> readLogs(File dir) {
 		// trials should be directories
 		logger.log(Level.INFO, "read logs from "+dir);
+		Map<String,Integer> trialdays = readTrialdays(new File(dir,"trialday.csv"));
 		List<UserData> users = new LinkedList<UserData>();
 		File tfs[] = dir.listFiles();
 		for (int ti=0; ti<tfs.length; ti++) {
@@ -77,6 +83,10 @@ public class LogReader {
 				continue;
 			String trialid = trialdir.getName();
 			logger.log(Level.INFO, "process trial "+trialid);
+			int trialday = 0;
+			if(trialdays.containsKey(trialid)) {
+				trialday = trialdays.get(trialid);
+			}
 			File pfs[] = trialdir.listFiles();
 			for (int pi=0; pi<pfs.length; pi++) {
 				File userdir = pfs[pi];
@@ -94,20 +104,76 @@ public class LogReader {
 				users.add(user);
 				File behaviourfile = new File(datadir, "BehaviouralData.csv");
 				File kmlfile = new File(datadir, "GpsTrace.kml");
+				//int minDay = Integer.MAX_VALUE;
 				if (behaviourfile.exists()) {
 					user.setEvents(readEvents(behaviourfile));
+//					for(Event e : user.getEvents()) {
+//						if (e.getTimestamp()!=null) {
+//							int day = Utils.getDay(e.getTimestamp());
+//							if (day<minDay)
+//								minDay=day;
+//						}
+//					}
 				}
 				else
 					logger.log(Level.WARNING, "No behaviour data file found for "+datadir);
 				if (kmlfile.exists()) {
 					user.setPositions(readPositions(kmlfile));
+//					for (Position p : user.getPositions()) {
+//						int day = Utils.getDay(p.getTime());
+//						if (day<minDay)
+//							minDay=day;
+//					}
 				}
 				else
 					logger.log(Level.WARNING, "No kml file found for "+datadir);
-				logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions ("+countTruncatedPositions(user.getPositions())+" truncated)");
+				// remove late events
+				int discardEvents = 0, discardPositions = 0;
+				if (trialday!=0) {
+					for(int ei=0; ei<user.getEvents().size(); ei++) {
+						Event e= user.getEvents().get(ei);
+						if (e.getTimestamp()!=null && Utils.getDay(e.getTimestamp())!=trialday) {
+							user.getEvents().remove(ei);
+							ei--;
+							discardEvents++;
+						}
+					}
+					for(int ei=0; ei<user.getPositions().size(); ei++) {
+						Position e= user.getPositions().get(ei);
+						if (Utils.getDay(e.getTime())!=trialday) {
+							user.getPositions().remove(ei);
+							ei--;
+							discardPositions++;
+						}
+					}
+					logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions ("+countTruncatedPositions(user.getPositions())+" truncated), discard "+discardEvents+" early/late events and "+discardPositions+" early/late positions (trialDay "+trialday+")");
+				}				
+				else
+					logger.log(Level.INFO, "For user "+user.getTrialuserid()+" found "+user.getEvents().size()+" events and "+user.getPositions().size()+" positions ("+countTruncatedPositions(user.getPositions())+" truncated)");
+
 			}
 		}
 		return users;
+	}
+	private static Map<String, Integer> readTrialdays(File file) {
+		Map<String, Integer> trialdays = new HashMap<String, Integer>();
+		logger.log(Level.INFO,"Reading trial day(s) from "+file);
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			br.readLine();//header
+			while (true) {
+				String line = br.readLine();
+				if (line==null)
+					break;
+				String values[] = line.split(",");
+				trialdays.put(values[0], Integer.parseInt(values[1]));
+			}			
+			br.close();
+		}
+		catch (Exception e) {
+			logger.log(Level.SEVERE,"Could not read trialdays from "+file, e);
+		}
+		return trialdays;
 	}
 	/**
 	 * @param positions
