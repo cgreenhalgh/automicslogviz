@@ -70,48 +70,68 @@ public class DrawTrails {
 			width = 2000;
 			
 			SvgFile svg = createBackgroundFile(new File(outdir,"park.svg"));
-/*			for (UserData user : users) {
-				for (Position p : user.getPositions()) {
-					if (p.isTruncated())
-						continue;
-					
-					double x= p.getX();
-					double y= p.getY();
-					if (x<minX)
-						minX = x;
-					if (x>maxX)
-						maxX = x;
-					if (y<minY)
-						minY = y;
-					if (y>maxY)
-						maxY = y;
-					double lat= p.getLat();
-					double lon= p.getLon();
-					if (lat<minLat)
-						minLat = lat;
-					if (lat>maxLat)
-						maxLat = lat;
-					if (lon<minLon)
-						minLon = lon;
-					if (lon>maxLon)
-						maxLon = lon;
+			{
+				double minX=Double.MAX_VALUE, minY=Double.MAX_VALUE, maxX=-Double.MAX_VALUE, maxY=-Double.MAX_VALUE;
+				double minLat=Double.MAX_VALUE, minLon=Double.MAX_VALUE, maxLat=-Double.MAX_VALUE, maxLon=-Double.MAX_VALUE;
+				float minHOD=Float.MAX_VALUE, maxHOD=-Float.MAX_VALUE;
+				float minHOD2=Float.MAX_VALUE, maxHOD2=-Float.MAX_VALUE;
+				for (UserData user : users) {
+					for (Position p : user.getPositions()) {
+						if (p.isTruncated())
+							continue;
+
+						double x= p.getX();
+						double y= p.getY();
+						if (x<minX)
+							minX = x;
+						if (x>maxX)
+							maxX = x;
+						if (y<minY)
+							minY = y;
+						if (y>maxY)
+							maxY = y;
+						double lat= p.getLat();
+						double lon= p.getLon();
+						if (lat<minLat)
+							minLat = lat;
+						if (lat>maxLat)
+							maxLat = lat;
+						if (lon<minLon)
+							minLon = lon;
+						if (lon>maxLon)
+							maxLon = lon;
+						float hod = p.getHourOfDay();
+						if (hod<minHOD)
+							minHOD=hod;
+						if (hod>maxHOD)
+							maxHOD=hod;
+					}
+					for (Event e : user.getEvents()) {
+						Float hod = e.getHourOfDay();
+						if (hod==null)
+							continue;
+						if (hod<minHOD2)
+							minHOD2=hod;
+						if (hod>maxHOD2)
+							maxHOD2=hod;
+						
+					}
 				}
+				logger.log(Level.INFO,"Ranges, x: "+minX+" to "+maxX+", y: "+minY+" to "+maxY);
+				logger.log(Level.INFO,"Ranges, lon: "+minLon+" to "+maxLon+", lat: "+minLat+" to "+maxLat);
+				logger.log(Level.INFO,"Ranges, HOD: "+minHOD+" to "+maxHOD);
+				logger.log(Level.INFO,"Ranges, HOD2: "+minHOD2+" to "+maxHOD2);
+				minX -= BORDER_M;
+				minY -= BORDER_M;
+				maxX += BORDER_M;
+				maxY += BORDER_M;
 			}
-			logger.log(Level.INFO,"Ranges, x: "+minX+" to "+maxX+", y: "+minY+" to "+maxY);
-			logger.log(Level.INFO,"Ranges, lon: "+minLon+" to "+maxLon+", lat: "+minLat+" to "+maxLat);
-			minX -= BORDER_M;
-			minY -= BORDER_M;
-			maxX += BORDER_M;
-			maxY += BORDER_M;
-*/			//hack!!
-			//maxX = minX+(maxY-minY);
 			//String stroke = "#ff0000";
 			drawPositions(svg, users, "#eee", false);
 			drawZones(svg, zones);
 			
 			svg.close();
 			svg = createBackgroundFile(new File(outdir,"allusers.svg"));
-
 			drawPositions(svg, users, null, false);
 			svg.close();
 			
@@ -119,6 +139,13 @@ public class DrawTrails {
 			drawPositions(svg, users, null, false);
 			drawEvents(svg, users, null, zones);
 			svg.close();
+
+			svg.close();
+			svg = createBackgroundFile(new File(outdir,"allusershod.svg"));
+			drawPositionsHod(svg, users, false);
+			drawEventsHod(svg, users, zones);
+			svg.close();
+			
 		} catch (Exception e) {
 			logger.log(Level.SEVERE, "Error creating "+args[1], e);
 		}		
@@ -150,6 +177,39 @@ public class DrawTrails {
 		}
 		
 	}
+	private static String getColour(float value) {
+		if(value<0)
+			value = 0;
+		if (value>1)
+			value = 1;
+		return "#"+getHex(1-value)+"00"+getHex(value);
+	}
+	private static String getHex(float f) {
+		String red = Integer.toHexString((int)(255*f));
+		if (red.length()==1)
+			red = "0"+red;
+		return red;
+	}
+	/** colour by hour of day */
+	private static void drawPositionsHod(SvgFile svg, List<UserData> users,
+			boolean showPoints) {
+		float strokeWidth = 0.5f;
+		for (UserData user : users) {
+			Position lp = null;
+			for (Position p : user.getPositions()) {
+				String stroke = getColour(scaleHod(p.getHourOfDay()));
+				if (lp!=null && !lp.isTruncated() && !p.isTruncated()) {
+					svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
+				}
+				lp = p;
+				if (showPoints)
+					svg.circle(scaleX(p.getX()), scaleY(p.getY()), 3, stroke, 0.4f, null);
+			}
+		}		
+	}
+	private static float scaleHod(float hourOfDay) {
+		return (float)(hourOfDay-6)/(16-6);
+	}
 	private static void drawEvents(SvgFile svg, List<UserData> users,
 			String overrideStroke, Map<Integer,Zone> zones) {
 		float strokeWidth = 0.5f;
@@ -159,6 +219,30 @@ public class DrawTrails {
 			String stroke = overrideStroke!=null ? overrideStroke : colors[ci];
 			for (Event e : user.getEvents()) {
 //				e.get
+				if (e.getGpsTagId()!=0) {
+					Zone z= zones.get(e.getGpsTagId());
+					if (z!=null) {
+						String fill = getZoneFill(z);
+						float rx = (float)((Math.random()-0.5)*JITTER);
+						float ry = (float)((Math.random()-0.5)*JITTER);
+						svg.circle(rx+scaleX(Mercator.mercX(z.getLon())),ry+scaleY(Mercator.mercY(z.getLat())), scaleD(z.getRadius()), stroke, 1.0f, fill,"fill-opacity=\"0.1\"");
+					}
+				}
+			}
+		}
+		
+	}
+	private static void drawEventsHod(SvgFile svg, List<UserData> users,
+			Map<Integer,Zone> zones) {
+		float strokeWidth = 0.5f;
+		int ci = 0;
+		for (UserData user : users) {
+			for (Event e : user.getEvents()) {
+//				e.get
+				Float hod = e.getHourOfDay();
+				if (hod==null)
+					continue;
+				String stroke = getColour(scaleHod(hod));
 				if (e.getGpsTagId()!=0) {
 					Zone z= zones.get(e.getGpsTagId());
 					if (z!=null) {

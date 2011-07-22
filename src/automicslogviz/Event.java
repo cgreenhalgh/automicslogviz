@@ -276,5 +276,12 @@ public class Event {
 	public void setReceptRating(Integer receptRating) {
 		this.receptRating = receptRating;
 	}
-
+	public Float getHourOfDay() {
+		Long ts = getNotificationTs();
+		if (ts==null || ts==0)
+			ts = getTaskAcceptTs();
+		if (ts==null || ts==0)
+			return null;
+		return Utils.getHourOfDay(ts);
+	}
 }

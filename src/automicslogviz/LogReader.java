@@ -123,7 +123,7 @@ public class LogReader {
 	private static List<Position> readPositions(File kmlfile) {
 		LinkedList<Position> positions = new LinkedList<Position>();
 		try {
-			SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssZ");
+			SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
 			BufferedReader br = new BufferedReader(new FileReader(kmlfile));
 			Position p = null;
 			while (true) {
@@ -139,6 +139,7 @@ public class LogReader {
 						String datetime = line.substring("<TimeStamp><when>".length(), ix);
 						Date date = dateformat.parse(datetime);
 						p.setTime(date.getTime());
+						//logger.log(Level.INFO,"Time "+datetime+" -> "+date+": "+p.getTime()+" ("+Utils.getHourOfDay(p.getTime())+")");
 						if (p.getLat()!=0) {
 							positions.add(p);
 							p = null;

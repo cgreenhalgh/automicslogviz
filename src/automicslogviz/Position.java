@@ -50,6 +50,9 @@ public class Position {
 	public long getTime() {
 		return time;
 	}
+	public float getHourOfDay() {
+		return Utils.getHourOfDay(time);
+	}
 	/**
 	 * @param time the time to set
 	 */
