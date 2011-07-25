@@ -287,4 +287,20 @@ public class Event {
 	public Float getHourOfDay() {
 		return Utils.getHourOfDay(getTimestamp());
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Event [acceptanceTime=" + acceptanceTime + ", gpsTagId="
+				+ gpsTagId + ", init=" + init + ", notficationAcceptTs="
+				+ notficationAcceptTs + ", notificationTs=" + notificationTs
+				+ ", notificationType=" + notificationType + ", receptRating="
+				+ receptRating + ", reminderCount=" + reminderCount
+				+ ", responseTime=" + responseTime + ", taskAcceptTime="
+				+ taskAcceptTime + ", taskAcceptTs=" + taskAcceptTs
+				+ ", taskComp=" + taskComp + ", taskCompTime=" + taskCompTime
+				+ ", taskCompTs=" + taskCompTs + ", taskId=" + taskId
+				+ ", taskType=" + taskType + "]";
+	}
 }

@@ -173,10 +173,52 @@ public class DrawTrails {
 				drawEventsHod(svg, members, zones);
 				svg.close();
 			}
+			for (UserData user : users) {
+				logger.info("User "+user.getTrialid()+" "+user.getTrialuserid());
+				svg = createBackgroundFile(new File(outdir,"allusershodtl-"+user.getTrialid()+"-"+user.getTrialuserid()+".svg"));
+				List<UserData> members = new LinkedList<UserData>();
+				members.add(user);
+				drawZones2(svg, zones);
+				drawPositionsHod(svg, members, false);
+				drawTimelineEventsHod(svg, members, zones);
+				svg.close();
+			}
 			
 		} catch (Exception e) {
 			logger.log(Level.SEVERE, "Error creating "+args[1], e);
 		}		
+	}
+	private static void drawTimelineEventsHod(SvgFile svg,
+			List<UserData> members, Map<Integer, Zone> zones) {
+		// TODO Auto-generated method stub
+		for (UserData user : members) {
+			Timeline tl = getTimeline(user);
+			for (Event e : user.getEvents()) {
+				if (!"newImages".equals(e.getTaskType()))
+					DrawTimelines.drawEvent(svg, e, tl);				
+			}
+		}
+	}
+	private static Timeline getTimeline(UserData user) {
+		Timeline tl = new Timeline();
+		TimelinePoint lasttp = null;
+		boolean truncated = false;
+		for (Position p : user.getPositions()) {
+			TimelinePoint tp = new TimelinePoint(p.getHourOfDay(), scaleX(p.getX()), scaleY(p.getY()));
+			if (lasttp==null)
+				lasttp = tp;
+			else {
+				if (!p.isTruncated()) {
+					TimelineSegment s1 =new TimelineSegment(lasttp, tp, (truncated || p.isTruncated() ? DrawTimelines.DASHED : DrawTimelines.SOLID));
+					tl.getSegments().add(s1);
+					lasttp = tp;
+					truncated = p.isTruncated();
+				}
+				else
+					truncated = true;
+			}
+		}
+		return tl;
 	}
 	/**
 	 * @param svg
@@ -317,7 +359,16 @@ public class DrawTrails {
 			float size = scaleD(z.getRadius());
 			if (size<1)
 				size = 1;
-			svg.circle(scaleX(Mercator.mercX(z.getLon())),scaleY(Mercator.mercY(z.getLat())), size, "#bbb", 1.0f, fill);
+			svg.circle(scaleX(Mercator.mercX(z.getLon())),scaleY(Mercator.mercY(z.getLat())), size, fill, 1.0f, fill, " fill-opacity=\"30%\"");
+		}
+	}
+	private static void drawZones2(SvgFile svg, Map<Integer, Zone> zones) {
+		for (Zone z : zones.values()) {
+			String fill = getZoneFill(z);
+			float size = scaleD(z.getRadius());
+			if (size<1)
+				size = 1;
+			svg.circle(scaleX(Mercator.mercX(z.getLon())),scaleY(Mercator.mercY(z.getLat())), size, fill, 0.0f, fill, " fill-opacity=\"15%\" stroke-opacity=\"20%\"");
 		}
 	}
 	/**
@@ -373,6 +424,6 @@ public class DrawTrails {
 	}
 	/** real metres! */
 	private static float scaleD(double d) {
-		return (float)(SCALE*d/width*Math.cos(Math.PI*cLat/180));
+		return (float)(SCALE*d/width/Math.cos(Math.PI*cLat/180));
 	}
 }

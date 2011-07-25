@@ -74,4 +74,7 @@ public class SvgFile {
 	public void line(float x1, float y1, float x2, float y2, String stroke, float strokeWidth, String extra) {
 		pw.println("<line x1=\""+x1+"\" y1=\""+y1+"\" x2=\""+x2+"\" y2=\""+y2+"\" "+(stroke!=null ? "stroke=\""+stroke+"\" ": "")+"stroke-width=\""+strokeWidth+"\" "+(extra!=null ? extra : "")+"/>");
 	}
+	public void text(String text, float x, float y, float fontSize, String fill, String extra) {
+		pw.println("<text x=\""+x+"\" y=\""+y+"\" font-size=\""+fontSize+"\" fill=\""+fill+"\" "+(extra!=null ? extra : "")+">"+text+"</text>");
+	}
 }
