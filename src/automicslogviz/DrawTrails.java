@@ -149,6 +149,12 @@ public class DrawTrails {
 			drawEventsHod(svg, users, zones);
 			svg.close();
 			
+			svg = createBackgroundFile(new File(outdir,"allusershodtl.svg"));
+			drawZones2(svg, zones);
+			drawPositionsHod(svg, users, false);
+			drawTimelineEventsHod(svg, users, zones);
+			svg.close();
+			
 			Set<String> groups  = new HashSet<String>();
 			for (UserData u : users) {
 				groups.add(u.getTrialid());
@@ -163,6 +169,12 @@ public class DrawTrails {
 				drawPositionsHod(svg, members, false);
 				drawEventsHod(svg, members, zones);
 				svg.close();
+				
+				svg = createBackgroundFile(new File(outdir,"allusershodtl-"+group+".svg"));
+				drawZones2(svg, zones);
+				drawPositionsHod(svg, members, false);
+				drawTimelineEventsHod(svg, members, zones);
+				svg.close();
 			}
 			for (UserData user : users) {
 				logger.info("User "+user.getTrialid()+" "+user.getTrialuserid());
@@ -172,12 +184,8 @@ public class DrawTrails {
 				drawPositionsHod(svg, members, false);
 				drawEventsHod(svg, members, zones);
 				svg.close();
-			}
-			for (UserData user : users) {
-				logger.info("User "+user.getTrialid()+" "+user.getTrialuserid());
+
 				svg = createBackgroundFile(new File(outdir,"allusershodtl-"+user.getTrialid()+"-"+user.getTrialuserid()+".svg"));
-				List<UserData> members = new LinkedList<UserData>();
-				members.add(user);
 				drawZones2(svg, zones);
 				drawPositionsHod(svg, members, false);
 				drawTimelineEventsHod(svg, members, zones);
