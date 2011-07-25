@@ -42,6 +42,7 @@ import org.omg.PortableServer.LIFESPAN_POLICY_ID;
 public class DrawTimelines {
 	static Logger logger = Logger.getLogger(DrawTimelines.class.getName());
 	public static float SCALE = 1000;
+	public static int MAG = 10;
 	public static float BIG_MARGIN = 100;
 	public static float SMALL_MARGIN = 10;
 	public static double MIN_MIN_HOD = 8; // 8?
@@ -52,6 +53,7 @@ public class DrawTimelines {
 	static final String SOLID = "solid";
 	private static final String NOTIFICATION = "notification";
 	private static final String ACCEPTANCE = "acceptance";
+	private static final String SOCIAL = "social";
 	private static final float TEXT_HEIGHT = 15;
 	/**
 	 * @param args
@@ -124,13 +126,13 @@ public class DrawTimelines {
 		
 		for (int hod=(int)Math.ceil(MIN_HOD); hod<MAX_HOD; hod++) {
 			double x = BIG_MARGIN+(SCALE-BIG_MARGIN-SMALL_MARGIN)*(hod-MIN_HOD)/(MAX_HOD-MIN_HOD);
-			svg.line((float)x, (float)SMALL_MARGIN, (float)x, (float)(SCALE-BIG_MARGIN), "#888", 0.5f, " stroke-dasharray=\"2 4\"");
+			svg.line((float)x, (float)SMALL_MARGIN, (float)x, (float)(SCALE-BIG_MARGIN), "#888", 0.5f, " stroke-dasharray=\""+MAG*2+" "+MAG*8+"\"");
 			svg.text(hod+":00", (float) x, SCALE-BIG_MARGIN+TEXT_HEIGHT, 11, "#000", null);
 		}
 		
 		int ui =0;
 		for (UserData user : users) {
-			float y = SMALL_MARGIN+LANE_WIDTH/2+LANE_WIDTH*ui;
+			float y = SMALL_MARGIN+(LANE_WIDTH-20)+LANE_WIDTH*ui;
 			svg.text(user.getTrialid()+"/"+user.getTrialuserid(), 0, y, 11, "#000", null);
 			ui++;
 		}
@@ -138,7 +140,7 @@ public class DrawTimelines {
 		ui =0;
 		for (UserData user : users) {
 			Timeline tl = new Timeline();
-			float y = SMALL_MARGIN+LANE_WIDTH/2+LANE_WIDTH*ui;
+			float y = SMALL_MARGIN+(LANE_WIDTH-20)+LANE_WIDTH*ui;
 			TimelinePoint lasttp = new TimelinePoint(MIN_HOD, (float)(BIG_MARGIN), y);
 			boolean first = true;
 			boolean truncated = false;
@@ -178,8 +180,8 @@ public class DrawTimelines {
 			for (Event e : user.getEvents()) {
 				// init==sys => notificationTs & acceptanceTime (seconds, 0==not)
 				// init==user => taskAcceptTs
-				if (!"newImages".equals(e.getTaskType()))
-					drawEvent(svg, e, tl);
+				//if (!"newImages".equals(e.getTaskType()))
+				drawEvent(svg, e, tl, zones);
 			}
 			
 			ui++;
@@ -200,6 +202,9 @@ public class DrawTimelines {
 		return df2.format(hours)+df2.format(minutes)+df2.format(seconds);
 	}
 	static void drawEvent(SvgFile svg, Event e, Timeline tl) {
+		drawEvent(svg, e, tl, null);
+	}
+	static void drawEvent(SvgFile svg, Event e, Timeline tl, Map<Integer,Zone> zones) {
 		String stroke = getEventStroke(e);
 		// TODO Auto-generated method stub
 		if (e.getNotificationTs()!=null && e.getNotificationTs()!=0) {
@@ -208,7 +213,17 @@ public class DrawTimelines {
 			if (s==null)
 				logger.log(Level.WARNING,"COuld not find TimelineSegment for event "+e);
 			else {
-				drawGlyph(svg, s, tod, NOTIFICATION, stroke);
+				if ("newImages".equals(e.getTaskType()))
+					drawGlyph(svg, s, tod, SOCIAL, stroke);
+				else {
+					drawGlyph(svg, s, tod, NOTIFICATION, stroke);
+					if (zones!=null && e.getGpsTagId()!=0) {
+						Zone z = zones.get(e.getGpsTagId());
+						if (z!=null) {
+							drawLabel(svg, s, tod, z.getComment().replace("'", ""));
+						}
+					}
+				}
 			}
 		}
 		if (e.getNotficationAcceptTs()!=null && e.getNotficationAcceptTs()!=0) {
@@ -227,6 +242,24 @@ public class DrawTimelines {
 				tod2 = Utils.getHourOfDay(e.getTaskCompTs());
 			drawDuration(svg, tl, tod, tod2, stroke);
 		}
+	}
+	private static void drawLabel(SvgFile svg, TimelineSegment s, double time,
+			String comment) {
+		if (time<s.getStart().getTime())
+			time = s.getStart().getTime();
+		else if (time>s.getEnd().getTime())
+			time = s.getEnd().getTime();
+		double x = s.getStart().getX();
+		double y = s.getStart().getY();
+		double angle = 0;
+		if (s.getStart().getTime()<s.getEnd().getTime()) {
+			x = s.getStart().getX()+(s.getEnd().getX()-s.getStart().getX())*(time-s.getStart().getTime())/(s.getEnd().getTime()-s.getStart().getTime());
+			y = s.getStart().getY()+(s.getEnd().getY()-s.getStart().getY())*(time-s.getStart().getTime())/(s.getEnd().getTime()-s.getStart().getTime());
+		}
+		angle = 180*Math.atan2(s.getEnd().getY()-s.getStart().getY(), s.getEnd().getX()-s.getStart().getX())/Math.PI;
+		svg.print("<g transform=\"translate("+svg.scale((float)x)+" "+svg.scale((float)y)+") rotate("+(angle-90)+")\">");
+		svg.text(comment, 15, 5, 10, "#888", " font-family=\"sans-serif\"");
+		svg.print("</g>");
 	}
 	private static void drawDuration(SvgFile svg, Timeline tl, float tod,
 			float tod2, String stroke) {
@@ -254,10 +287,10 @@ public class DrawTimelines {
 				//	p2 = p1+1/s.getLength();
 				//}
 				if (tod>=s.getStart().getTime())
-					svg.line((float)s.getX(p1), (float)s.getY(p1), (float)s.getX(p1+1/s.getLength()), (float)s.getY(p1+1/s.getLength()), stroke, 10, " stroke-opacity=\"100%\"");		
+					svg.line((float)s.getX(p1), (float)s.getY(p1), (float)s.getX(p1+1/s.getLength()), (float)s.getY(p1+1/s.getLength()), stroke, 8, " stroke-opacity=\"100%\"");		
 				if (tod2<s.getEnd().getTime())
-					svg.line((float)s.getX(p2), (float)s.getY(p2), (float)s.getX(p2+1/s.getLength()), (float)s.getY(p2+1/s.getLength()), stroke, 10, " stroke-opacity=\"100%\"");		
-				svg.line((float)s.getX(p1), (float)s.getY(p1), (float)s.getX(p2), (float)s.getY(p2), stroke, 10, " stroke-opacity=\"30%\"");
+					svg.line((float)s.getX(p2), (float)s.getY(p2), (float)s.getX(p2+1/s.getLength()), (float)s.getY(p2+1/s.getLength()), stroke, 8, " stroke-opacity=\"100%\"");		
+				svg.line((float)s.getX(p1), (float)s.getY(p1), (float)s.getX(p2), (float)s.getY(p2), stroke, 8, " stroke-opacity=\"30%\"");
 				svg.line((float)s.getX(p1), (float)s.getY(p1), (float)s.getX(p2), (float)s.getY(p2), stroke, 1, " stroke-opacity=\"100%\"");
 			}
 		}
@@ -279,11 +312,14 @@ public class DrawTimelines {
 			y = s.getStart().getY()+(s.getEnd().getY()-s.getStart().getY())*(time-s.getStart().getTime())/(s.getEnd().getTime()-s.getStart().getTime());
 		}
 		angle = 180*Math.atan2(s.getEnd().getY()-s.getStart().getY(), s.getEnd().getX()-s.getStart().getX())/Math.PI;
-		svg.print("<g transform=\"translate("+x+" "+y+") rotate("+angle+")\">");
-		if (NOTIFICATION.equals(type))
-			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M -5 -5 L 0 0 -5 5 -5 -5\"/>");
+		svg.print("<g transform=\"translate("+svg.scale((float)x)+" "+svg.scale((float)y)+") rotate("+angle+") scale("+svg.scale(1)+")\">");
+		if (NOTIFICATION.equals(type)) {
+			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M -5 -10 L 0 0 5 -10 -5 -10\"/>");
+		}
 		else if (ACCEPTANCE.equals(type)) 
-			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M -5 0 L 0 5 5 0 0 -5 -5 0\"/>");
+			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M -4 8 L 0 0 4 8 -4 8\"/>");
+		else if (SOCIAL.equals(type)) 
+			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M 0 -9 L 0 -4\"/>");
 		else
 			svg.print("<path fill-opacity=\"0%\" stroke=\""+stroke+"\" stroke-width=\"0.5\" d=\"M -5 -5 L 5 5 M -5 5 L 5 -5\"/>");
 
@@ -301,8 +337,10 @@ public class DrawTimelines {
 			fill = "#f00";
 		else if ("end of ride".equals(e.getTaskType()))
 			fill = "#aa0";
-		else if ("photo".equals(e.getTaskType()) || "newImage".equals(e.getTaskType()))			
+		else if ("photo".equals(e.getTaskType()) || "newImages".equals(e.getTaskType()))			
 			fill = "#a0a";
+		else
+			logger.log(Level.INFO, "Unknown event type: "+e.getTaskType());
 		return fill;
 	}
 	private static TimelineSegment getTimelineSegment(Timeline tl, double time) {
@@ -324,7 +362,7 @@ public class DrawTimelines {
 	}
 	private static String getTimeSegmentExtra(TimelineSegment s) {
 		if (DASHED.equals(s.getType()))
-			return " stroke-dasharray=\"3 3\"";
+			return " stroke-dasharray=\""+MAG*3+" "+MAG*3+"\"";
 		if (NONE.equals(s.getType()))
 			return " stroke-opacity=\"0%\"";
 		return null;
@@ -336,16 +374,16 @@ public class DrawTimelines {
 		return "#000";
 	}
 	private static SvgFile createTimelineFile(File file) throws UnsupportedEncodingException, FileNotFoundException {
-		SvgFile svg = new SvgFile(file);
+		SvgFile svg = new SvgFile(file, MAG);
 		svg.desc("DrawTimelines of automics data, "+new Date());
 		svg.rect(BIG_MARGIN, SMALL_MARGIN, SCALE-BIG_MARGIN-SMALL_MARGIN, SCALE-BIG_MARGIN-SMALL_MARGIN, "#888", 0.5f, "#fff");
 		return svg;
 	}
 	private static void startClip(SvgFile svg) {
-		svg.print("<clipPath id=\"clip\"><path d=\"M "+BIG_MARGIN+" "+SMALL_MARGIN+" "+
-				(SCALE-SMALL_MARGIN)+" "+SMALL_MARGIN+" "+
-				(SCALE-SMALL_MARGIN)+" "+(SCALE-BIG_MARGIN)+" "+
-				BIG_MARGIN+" "+(SCALE-BIG_MARGIN)+"\"/>"+
+		svg.print("<clipPath id=\"clip\"><path d=\"M "+MAG*BIG_MARGIN+" "+MAG*SMALL_MARGIN+" "+
+				MAG*(SCALE-SMALL_MARGIN)+" "+MAG*SMALL_MARGIN+" "+
+				MAG*(SCALE-SMALL_MARGIN)+" "+MAG*(SCALE-BIG_MARGIN)+" "+
+				MAG*BIG_MARGIN+" "+MAG*(SCALE-BIG_MARGIN)+"\"/>"+
 				"</clipPath><g clip-path=\"url(#clip)\">");
 	}
 	private static void endClip(SvgFile svg) {

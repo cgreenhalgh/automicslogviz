@@ -40,6 +40,7 @@ public class DrawTrails {
 	static Logger logger = Logger.getLogger(DrawTrails.class.getName());
 	public static double BORDER_M = 100;
 	public static double SCALE = 1000;
+	public static int MAG = 10;
 //	private static double minX=Double.MAX_VALUE, minY=Double.MAX_VALUE, maxX=-Double.MAX_VALUE, maxY=-Double.MAX_VALUE;
 //	private static double minLat=Double.MAX_VALUE, minLon=Double.MAX_VALUE, maxLat=-Double.MAX_VALUE, maxLon=-Double.MAX_VALUE;
 	private static String colors [] = new String [] { "#f00", "#ff0", "#0f0", "#0ff", "#00f", "#f0f", "#f80", "#f08", "#0f8", "#8f0", "#80f", "#08f","#800", "#880", "#080", "#088", "#008", "#808" };
@@ -202,8 +203,8 @@ public class DrawTrails {
 		for (UserData user : members) {
 			Timeline tl = getTimeline(user);
 			for (Event e : user.getEvents()) {
-				if (!"newImages".equals(e.getTaskType()))
-					DrawTimelines.drawEvent(svg, e, tl);				
+				//if (!"newImages".equals(e.getTaskType()))
+				DrawTimelines.drawEvent(svg, e, tl, zones);				
 			}
 		}
 	}
@@ -256,7 +257,7 @@ public class DrawTrails {
 				svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
 			}
 			else if (lastGoodp!=null && !p.isTruncated()) {
-				svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\"3 3\"");					
+				svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\""+MAG*3+" "+MAG*3+"\"");					
 				lastGoodp = null;
 			}
 			lp = p;
@@ -292,7 +293,7 @@ public class DrawTrails {
 					svg.line(scaleX(lp.getX()), scaleY(lp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth);
 				}
 				else if (lastGoodp!=null && !p.isTruncated()) {
-					svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\"3 3\"");					
+					svg.line(scaleX(lastGoodp.getX()), scaleY(lastGoodp.getY()), scaleX(p.getX()), scaleY(p.getY()), stroke, strokeWidth, "stroke-dasharray=\""+MAG*3+" "+MAG*3+"\"");					
 					lastGoodp = null;
 				}
 				lp = p;
@@ -402,7 +403,7 @@ public class DrawTrails {
 	 * @throws UnsupportedEncodingException 
 	 */
 	private static SvgFile createBackgroundFile(File file) throws UnsupportedEncodingException, FileNotFoundException {
-		SvgFile svg = new SvgFile(file);
+		SvgFile svg = new SvgFile(file, MAG);
 		svg.desc("DrawTrails of automics data, "+new Date());
 		svg.print("<filter id=\"desaturate\"  primitiveUnits=\"objectBoundingBox\">");
 //		svg.print("<feImage x=\""+(500-width/2)+"\" y=\""+(500-width/2)+"\" width=\""+width+"\" height=\""+width+"\" xlink:href=\"altontowers-zoom15.png\"/>");
@@ -411,15 +412,15 @@ public class DrawTrails {
                 "0.3333 0.3333 0.3333 0 0 "+
               "0.3333 0.3333 0.3333 0 0 "+
             "0      0      0      1 0\"/>");
-		svg.print("<feColorMatrix type=\"matrix\" values=\"0.1 0 0 0 0 "+
-                "0 0.1 0 0 0 "+
-              "0 0 0.1 0 0 "+
+		svg.print("<feColorMatrix type=\"matrix\" values=\"0.05 0 0 0 0 "+
+                "0 0.05 0 0 0 "+
+              "0 0 0.05 0 0 "+
             "0      0      0      1 0\"/>");
 		svg.print("</filter>");
 		// zoom level - 2^zoom level tiles in x & y
 		int zoom = 15;
 		double imageWidth = 2*Mercator.mercX(180)/Math.pow(2, zoom)*640/256;
-		svg.print("<rect x=\""+SCALE*0.5*(1-imageWidth/width)+"\" y=\""+SCALE*0.5*(1-imageWidth/width)+"\" width=\""+SCALE*(imageWidth/width)+"\" height=\""+SCALE*(imageWidth/width)+"\" filter=\"url(#desaturate)\"/>");
+		svg.print("<rect x=\""+MAG*SCALE*0.5*(1-imageWidth/width)+"\" y=\""+MAG*SCALE*0.5*(1-imageWidth/width)+"\" width=\""+MAG*SCALE*(imageWidth/width)+"\" height=\""+MAG*SCALE*(imageWidth/width)+"\" filter=\"url(#desaturate)\"/>");
 		return svg;
 	}
 	private static float scaleX(double x) {

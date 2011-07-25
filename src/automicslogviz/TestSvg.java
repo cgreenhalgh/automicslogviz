@@ -40,7 +40,7 @@ public class TestSvg {
 		try {
 			File file = new File("test.svg");			
 			logger.log(Level.INFO,"Test output to "+file);
-			SvgFile svg = new SvgFile(file);
+			SvgFile svg = new SvgFile(file, 1);
 			svg.desc("Test svg");
 			svg.rect(100,100,800,800,"#ff00ff",10,"#808080");
 			svg.close();
