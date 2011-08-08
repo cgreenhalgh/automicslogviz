@@ -131,7 +131,7 @@ public class DrawTrails {
 				maxY += BORDER_M;
 			}
 			//String stroke = "#ff0000";
-			drawPositions(svg, users, "#eee", false);
+			drawPositions(svg, users, "#222", false);
 			drawZones(svg, zones);
 			
 			svg.close();
@@ -412,9 +412,9 @@ public class DrawTrails {
                 "0.3333 0.3333 0.3333 0 0 "+
               "0.3333 0.3333 0.3333 0 0 "+
             "0      0      0      1 0\"/>");
-		svg.print("<feColorMatrix type=\"matrix\" values=\"0.05 0 0 0 0 "+
-                "0 0.05 0 0 0 "+
-              "0 0 0.05 0 0 "+
+		svg.print("<feColorMatrix type=\"matrix\" values=\"0.3 0 0 0 0.7 "+
+                "0 0.3 0 0 0.7 "+
+              "0 0 0.3 0 0.7 "+
             "0      0      0      1 0\"/>");
 		svg.print("</filter>");
 		// zoom level - 2^zoom level tiles in x & y

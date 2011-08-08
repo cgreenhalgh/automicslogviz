@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg opacity="20%" width="30cm" height="30cm" version="1.1" viewBox="0 0 10000 10000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<desc>DrawTrails of automics data, Mon Jul 25 14:51:47 BST 2011</desc>
+<desc>DrawTrails of automics data, Mon Aug 08 16:33:07 BST 2011</desc>
 <filter id="desaturate"  primitiveUnits="objectBoundingBox">
 <feImage x="0%" y="0%" width="100%" height="100%" xlink:href="altontowers-zoom15.png"/>
 <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0      0      0      1 0"/>
-<feColorMatrix type="matrix" values="0.05 0 0 0 0 0 0.05 0 0 0 0 0 0.05 0 0 0      0      0      1 0"/>
+<feColorMatrix type="matrix" values="0.3 0 0 0 0.7 0 0.3 0 0 0.7 0 0 0.3 0 0.7 0      0      0      1 0"/>
 </filter>
 <rect x="-2643.7028285176257" y="-2643.7028285176257" width="15287.405657035251" height="15287.405657035251" filter="url(#desaturate)"/>
 <line x1="3523.6252" y1="2471.788" x2="3589.304" y2="2629.5178" stroke="#85f079" stroke-width="5.0" />
@@ -39,12 +39,12 @@
 <line x1="2493.3633" y1="3663.5083" x2="2329.1672" y2="3688.412" stroke="#1bf0e3" stroke-width="5.0" />
 <line x1="2329.1672" y1="3688.412" x2="2221.7437" y2="3441.2163" stroke="#1bf0e3" stroke-width="5.0" />
 <line x1="2221.7437" y1="3441.2163" x2="2362.0063" y2="3347.134" stroke="#1bf0e3" stroke-width="5.0" />
-<circle cx="4763.6494" cy="3463.4934" r="83.05749" stroke="#84f07a" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="4719.8794" cy="3746.3809" r="124.58623" stroke="#83f07b" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="7211.4697" cy="2694.9143" r="124.58623" stroke="#6bf093" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="8320.453" cy="4954.992" r="83.05749" stroke="#40f0be" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="2632.8088" cy="3581.9038" r="83.05749" stroke="#28f0d6" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="2640.4375" cy="3563.657" r="83.05749" stroke="#27f0d7" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="2524.0188" cy="3644.1042" r="83.05749" stroke="#27f0d7" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="2267.4167" cy="3422.3125" r="83.05749" stroke="#1cf0e2" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
+<circle cx="4764.416" cy="3464.6921" r="83.05749" stroke="#84f07a" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="4680.208" cy="3730.5798" r="124.58623" stroke="#83f07b" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="7181.103" cy="2702.9707" r="124.58623" stroke="#6bf093" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="8326.132" cy="4935.028" r="83.05749" stroke="#40f0be" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="2613.0967" cy="3598.5183" r="83.05749" stroke="#28f0d6" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="2632.6257" cy="3598.2727" r="83.05749" stroke="#27f0d7" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="2532.0364" cy="3646.0151" r="83.05749" stroke="#27f0d7" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="2244.1135" cy="3439.326" r="83.05749" stroke="#1cf0e2" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
 </svg>

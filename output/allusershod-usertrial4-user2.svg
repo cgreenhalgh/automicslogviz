@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg opacity="20%" width="30cm" height="30cm" version="1.1" viewBox="0 0 10000 10000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<desc>DrawTrails of automics data, Mon Jul 25 14:51:47 BST 2011</desc>
+<desc>DrawTrails of automics data, Mon Aug 08 16:33:07 BST 2011</desc>
 <filter id="desaturate"  primitiveUnits="objectBoundingBox">
 <feImage x="0%" y="0%" width="100%" height="100%" xlink:href="altontowers-zoom15.png"/>
 <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0      0      0      1 0"/>
-<feColorMatrix type="matrix" values="0.05 0 0 0 0 0 0.05 0 0 0 0 0 0.05 0 0 0      0      0      1 0"/>
+<feColorMatrix type="matrix" values="0.3 0 0 0 0.7 0 0.3 0 0 0.7 0 0 0.3 0 0.7 0      0      0      1 0"/>
 </filter>
 <rect x="-2643.7028285176257" y="-2643.7028285176257" width="15287.405657035251" height="15287.405657035251" filter="url(#desaturate)"/>
 <line x1="3538.6533" y1="2526.2095" x2="3457.9468" y2="2352.7986" stroke="#b4f04a" stroke-width="5.0" />
@@ -96,23 +96,23 @@
 <line x1="2538.4478" y1="3470.7324" x2="2693.7383" y2="3550.0564" stroke="#47f0b7" stroke-width="5.0" />
 <line x1="2693.7383" y1="3550.0564" x2="2678.7104" y2="3728.074" stroke="#47f0b7" stroke-width="5.0" />
 <line x1="2678.7104" y1="3728.074" x2="2741.0493" y2="3886.7212" stroke="#46f0b8" stroke-width="5.0" />
-<circle cx="3581.112" cy="2539.5974" r="124.58623" stroke="#b4f04a" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
-<circle cx="2614.745" cy="3562.0767" r="83.05749" stroke="#b1f04d" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="1515.8184" cy="5374.661" r="207.64372" stroke="#aff04f" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="1356.2974" cy="5162.591" r="83.05749" stroke="#aef050" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="978.9144" cy="5535.73" r="166.11497" stroke="#aef050" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="1601.6802" cy="5726.773" r="124.58623" stroke="#abf053" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
-<circle cx="4756.462" cy="7057.483" r="83.05749" stroke="#a3f05b" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="4896.891" cy="7499.452" r="124.58623" stroke="#9df061" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="4909.292" cy="7537.7104" r="124.58623" stroke="#9af064" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="4903.3423" cy="7528.9307" r="124.58623" stroke="#92f06c" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="4874.1123" cy="7513.6274" r="124.58623" stroke="#8ff06f" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="4890.3315" cy="7526.958" r="124.58623" stroke="#8ef070" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="4682.305" cy="3730.0867" r="124.58623" stroke="#68f096" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="4750.1665" cy="3478.015" r="83.05749" stroke="#60f09e" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="2631.0376" cy="3569.9116" r="83.05749" stroke="#59f0a5" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="2619.442" cy="3575.6956" r="83.05749" stroke="#50f0ae" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="2521.9856" cy="3325.8262" r="124.58623" stroke="#4af0b4" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
-<circle cx="2643.4421" cy="3575.9443" r="83.05749" stroke="#47f0b7" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="3588.4573" cy="2575.929" r="124.58623" stroke="#19f0e5" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="3600.4556" cy="2549.9885" r="124.58623" stroke="#b4f04a" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="2658.0554" cy="3595.835" r="83.05749" stroke="#b1f04d" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="1515.4579" cy="5368.344" r="207.64372" stroke="#aff04f" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="1314.3676" cy="5170.3643" r="83.05749" stroke="#aef050" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="989.1207" cy="5541.1274" r="166.11497" stroke="#aef050" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="1568.0352" cy="5746.9033" r="124.58623" stroke="#abf053" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
+<circle cx="4774.7856" cy="7037.8423" r="83.05749" stroke="#a3f05b" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="4914.784" cy="7501.4385" r="124.58623" stroke="#9df061" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="4904.594" cy="7510.87" r="124.58623" stroke="#9af064" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="4882.34" cy="7510.4683" r="124.58623" stroke="#92f06c" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="4895.208" cy="7497.522" r="124.58623" stroke="#8ff06f" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="4869.854" cy="7525.329" r="124.58623" stroke="#8ef070" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="4690.1646" cy="3711.8994" r="124.58623" stroke="#68f096" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="4760.959" cy="3465.1711" r="83.05749" stroke="#60f09e" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="2624.3313" cy="3575.192" r="83.05749" stroke="#59f0a5" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="2644.1174" cy="3562.9763" r="83.05749" stroke="#50f0ae" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="2539.2932" cy="3325.3308" r="124.58623" stroke="#4af0b4" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="2643.2036" cy="3572.1724" r="83.05749" stroke="#47f0b7" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="3602.926" cy="2568.6274" r="124.58623" stroke="#19f0e5" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
 </svg>

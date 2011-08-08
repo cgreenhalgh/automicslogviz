@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg opacity="20%" width="30cm" height="30cm" version="1.1" viewBox="0 0 10000 10000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<desc>DrawTrails of automics data, Mon Jul 25 14:51:47 BST 2011</desc>
+<desc>DrawTrails of automics data, Mon Aug 08 16:33:07 BST 2011</desc>
 <filter id="desaturate"  primitiveUnits="objectBoundingBox">
 <feImage x="0%" y="0%" width="100%" height="100%" xlink:href="altontowers-zoom15.png"/>
 <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0      0      0      1 0"/>
-<feColorMatrix type="matrix" values="0.05 0 0 0 0 0 0.05 0 0 0 0 0 0.05 0 0 0      0      0      1 0"/>
+<feColorMatrix type="matrix" values="0.3 0 0 0 0.7 0 0.3 0 0 0.7 0 0 0.3 0 0.7 0      0      0      1 0"/>
 </filter>
 <rect x="-2643.7028285176257" y="-2643.7028285176257" width="15287.405657035251" height="15287.405657035251" filter="url(#desaturate)"/>
 <line x1="3562.587" y1="2432.125" x2="3469.6353" y2="2570.4846" stroke="#9cf062" stroke-width="5.0" />
@@ -99,13 +99,13 @@
 <line x1="2624.7205" y1="3574.9607" x2="2487.2407" y2="3476.2668" stroke="#42f0bc" stroke-width="5.0" />
 <line x1="2487.2407" y1="3476.2668" x2="2567.9473" y2="3633.9922" stroke="#42f0bc" stroke-width="5.0" />
 <line x1="2567.9473" y1="3633.9922" x2="2415.9963" y2="3728.074" stroke="#2ef0d0" stroke-width="5.0" />
-<circle cx="3620.0679" cy="2546.1606" r="124.58623" stroke="#a4f05a" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
-<circle cx="1322.4738" cy="5160.865" r="83.05749" stroke="#99f065" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="989.25665" cy="5541.2163" r="166.11497" stroke="#98f066" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
-<circle cx="1564.7983" cy="5718.7427" r="124.58623" stroke="#8ef070" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
-<circle cx="1499.2832" cy="5384.8564" r="207.64372" stroke="#8bf073" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="4780.9053" cy="7038.811" r="83.05749" stroke="#7bf083" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
-<circle cx="4534.9536" cy="6862.0605" r="83.05749" stroke="#5bf0a3" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
-<circle cx="4779.0596" cy="3163.2253" r="315.61847" stroke="#4cf0b2" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
-<circle cx="2515.5708" cy="3632.7393" r="83.05749" stroke="#42f0bc" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="3619.6829" cy="2551.9155" r="124.58623" stroke="#a4f05a" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="1313.9253" cy="5190.782" r="83.05749" stroke="#99f065" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="968.8665" cy="5565.165" r="166.11497" stroke="#98f066" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
+<circle cx="1578.5745" cy="5735.3228" r="124.58623" stroke="#8ef070" stroke-width="10.0" fill="#ff0" fill-opacity="0.1"/>
+<circle cx="1502.9604" cy="5372.166" r="207.64372" stroke="#8bf073" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="4769.5" cy="7053.2476" r="83.05749" stroke="#7bf083" stroke-width="10.0" fill="#00f" fill-opacity="0.1"/>
+<circle cx="4570.4185" cy="6843.0083" r="83.05749" stroke="#5bf0a3" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="4764.65" cy="3147.5234" r="315.61847" stroke="#4cf0b2" stroke-width="10.0" fill="#0f0" fill-opacity="0.1"/>
+<circle cx="2513.814" cy="3674.4775" r="83.05749" stroke="#42f0bc" stroke-width="10.0" fill="#f00" fill-opacity="0.1"/>
 </svg>
